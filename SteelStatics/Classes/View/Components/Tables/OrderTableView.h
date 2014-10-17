@@ -9,13 +9,16 @@
 @class OrderTableViewCell;
 
 
-@interface OrderTableView : UITableView <UITableViewDelegate, UITableViewDataSource, UITextFieldDelegate>
+@interface OrderTableView : UITableView <UITableViewDelegate, UITableViewDataSource>
 
 
-@property (strong) NSMutableArray* cellsDataContents;
+@property (readonly, strong) NSMutableArray* cellsDataContents;
 
 
-@property (strong) UIView* sectionZeroView;
+@property (readonly, strong) UIView* sectionZeroView;
+
+
+@property (readonly, strong) NSMutableArray* moveSequencesRows;
 
 
 

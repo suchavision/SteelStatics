@@ -14,6 +14,9 @@
 @synthesize sectionZeroView;
 
 
+@synthesize moveSequencesRows;
+
+
 -(void)awakeFromNib
 {
     [self setDefaultVariables];
@@ -41,6 +44,8 @@
     
     self.tableHeaderView = [self setupTableHeaderView];
     self.tableFooterView = [self setupTableFooterView];
+    
+    moveSequencesRows = [NSMutableArray array];
 }
 
 -(UIView*) setupTableHeaderView
@@ -192,7 +197,35 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 #pragma mark - Table view data source & delegate
+
 -(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     return CanvasH(50);
@@ -230,6 +263,27 @@
     [self updateColumnViewsFramesInCell: cell indexPath:indexPath];
 }
 
+
+
+
+
+// ----------------------- Move Begin -----------------------
+- (BOOL)tableView:(UITableView *)tableView canMoveRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    return YES;
+}
+
+- (void)tableView:(UITableView *)tableView moveRowAtIndexPath:(NSIndexPath *)sourceIndexPath toIndexPath:(NSIndexPath *)destinationIndexPath
+{
+    NSLog(@"%ld -> %ld", sourceIndexPath.row, destinationIndexPath.row);
+    [moveSequencesRows addObject:@[@(sourceIndexPath.row), @(destinationIndexPath.row)]];
+}
+// ----------------------- Move End -----------------------
+
+
+
+
+
 // ----------------------- Delete Begin -----------------------
 - (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath
 {
@@ -254,6 +308,6 @@
 {
     return @"刪除";
 }
-// ----------------------- Delete Begin -----------------------
+// ----------------------- Delete End -----------------------
 
 @end

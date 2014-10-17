@@ -42,22 +42,22 @@
         [ViewHelper iterateSubView:self.contentView class:[BaseTextField class] handler:^BOOL(UIView *view) {
             BaseTextField* textField = (BaseTextField*)view;
             
-            // not kUnit_Price or kCaculate_Result textfield , return .
+            textField.textFieldDidEndEditingBlock = ^void(NormalTextField* textField, NSString* oldText){
+                [self updateTableViewDatasources: (BaseTextField*)textField originText:oldText];
+            };
+            textField.textFieldDidSetTextBlock = ^void(NormalTextField* textField, NSString* oldText){
+                [self updateTableViewDatasources: (BaseTextField*)textField originText:oldText];
+            };
+            textField.textFieldEditingChangedBlock = ^void(NormalTextField* textField) {
+                [self updateTableViewDatasources: (BaseTextField*)textField originText:nil];
+            };
+            
+            
+            // for kUnit_Price & kCaculate_Result , return .
             NSString* key = textField.attributeKey;
             if (!([key isEqualToString:kUnit_Price] || [key isEqualToString: kCaculate_Result])) {
                 return NO;
             }
-
-            // then auto update
-            textField.textFieldDidSetTextBlock = ^void(NormalTextField* textField, NSString* oldText){
-                [self doAutoUpdateResult: textField originText:oldText];
-            };
-            textField.textFieldDidEndEditingBlock = ^void(NormalTextField* textField, NSString* oldText){
-                [self doAutoUpdateResult: textField originText:oldText];
-            };
-            textField.textFieldEditingChangedBlock = ^void(NormalTextField* textField) {
-                [self doAutoUpdateResult: textField originText:nil];
-            };
             textField.textFieldShouldChangeBlock = ^BOOL(NormalTextField* textField, NSRange range, NSString* replaceString) {
                 return [SSViewHelper checkIsNumericWithAlert: replaceString];
             };
@@ -123,17 +123,22 @@
 
 
 
--(void) doAutoUpdateResult: (UITextField*)textField originText:(NSString*)originText
+-(void) updateTableViewDatasources: (BaseTextField*)textField originText:(NSString*)originText
 {
     // the same text , return .
     NSString* newText = textField.text;
     if ([newText isEqualToString: originText]) return;
     
-    // not number , return .
-    if (![SSViewHelper checkIsNumericWithAlert: newText]) {
-        textField.text = nil;
-        return;
+    
+    // for kUnit_Price & kCaculate_Result, not number , return .
+    NSString* key = textField.attributeKey;
+    if ([key isEqualToString:kUnit_Price] || [key isEqualToString: kCaculate_Result]) {
+        if (![SSViewHelper checkIsNumericWithAlert: newText]) {
+            textField.text = nil;
+            return;
+        }
     }
+    
     
     OrderTableView* tableView = VIEW.tableController.tableView;
     NSMutableArray* cellsDataContents = tableView.cellsDataContents;
@@ -147,9 +152,8 @@
     
     
     
-    // update the results
+    // for kUnit_Price & kCaculate_Result,  update the caculate results
     if (!isEmptyString(values[kCaculate_Result]) && !isEmptyString(values[kUnit_Price])) {
-        
         float quantityPrice = [values[kCaculate_Result] floatValue];
         float unitPrice = [values[kUnit_Price] floatValue];
         
