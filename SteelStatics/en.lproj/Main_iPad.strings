@@ -1,0 +1,1305 @@
+
+/* Class = "IBUILabel"; text = "*"; ObjectID = "09z-mf-wsb"; */
+"09z-mf-wsb.text" = "*";
+
+/* Class = "IBUIButton"; normalTitle = "刷新"; ObjectID = "0JZ-Ud-0SR"; */
+"0JZ-Ud-0SR.normalTitle" = "刷新";
+
+/* Class = "IBUILabel"; text = "項目名稱 : "; ObjectID = "0T4-16-32j"; */
+"0T4-16-32j.text" = "項目名稱 : ";
+
+/* Class = "IBUILabel"; text = "*"; ObjectID = "0V8-Fr-S3Z"; */
+"0V8-Fr-S3Z.text" = "*";
+
+/* Class = "IBUIButton"; normalTitle = "刷新"; ObjectID = "0g0-fH-wKo"; */
+"0g0-fH-wKo.normalTitle" = "刷新";
+
+/* Class = "IBUILabel"; text = "H2(mm)"; ObjectID = "0gt-OA-iOC"; */
+"0gt-OA-iOC.text" = "H2(mm)";
+
+/* Class = "IBUILabel"; text = "*"; ObjectID = "0vb-rc-MY6"; */
+"0vb-rc-MY6.text" = "*";
+
+/* Class = "IBUILabel"; text = "長度(m)"; ObjectID = "1CE-Y9-795"; */
+"1CE-Y9-795.text" = "長度(m)";
+
+/* Class = "IBUILabel"; text = "*"; ObjectID = "1Qe-vT-eoz"; */
+"1Qe-vT-eoz.text" = "*";
+
+/* Class = "IBUILabel"; text = "支數"; ObjectID = "1hO-yT-ROl"; */
+"1hO-yT-ROl.text" = "支數";
+
+/* Class = "IBUITextField"; placeholder = "標準H型鋼型號"; ObjectID = "1k8-UV-CrO"; */
+"1k8-UV-CrO.placeholder" = "標準H型鋼型號";
+
+/* Class = "IBUILabel"; text = "長度(m)"; ObjectID = "1yw-l5-jCG"; */
+"1yw-l5-jCG.text" = "長度(m)";
+
+/* Class = "IBUILabel"; text = "Z型鋼："; ObjectID = "20p-nL-ATb"; */
+"20p-nL-ATb.text" = "Z型鋼：";
+
+/* Class = "IBUILabel"; text = "長度(m)"; ObjectID = "29c-T9-WBi"; */
+"29c-T9-WBi.text" = "長度(m)";
+
+/* Class = "IBUILabel"; text = "H1(mm)"; ObjectID = "2A0-Xi-NjF"; */
+"2A0-Xi-NjF.text" = "H1(mm)";
+
+/* Class = "IBUILabel"; text = "*"; ObjectID = "2HN-cP-GRI"; */
+"2HN-cP-GRI.text" = "*";
+
+/* Class = "IBUIButton"; normalTitle = "矩形管詳細規格"; ObjectID = "2Hz-Em-U85"; */
+"2Hz-Em-U85.normalTitle" = "矩形管詳細規格";
+
+/* Class = "IBUILabel"; text = "厚(mm)"; ObjectID = "2OG-Dk-2vX"; */
+"2OG-Dk-2vX.text" = "厚(mm)";
+
+/* Class = "IBUILabel"; text = "*"; ObjectID = "2v8-Vj-0fP"; */
+"2v8-Vj-0fP.text" = "*";
+
+/* Class = "IBUILabel"; text = "牛腿上"; ObjectID = "3NU-Gs-duN"; */
+"3NU-Gs-duN.text" = "牛腿上";
+
+/* Class = "IBUIButton"; normalTitle = "下一頁"; ObjectID = "3Uy-tm-aZn"; */
+"3Uy-tm-aZn.normalTitle" = "下一頁";
+
+/* Class = "IBUITabBarItem"; title = "Not_Process"; ObjectID = "3VN-h6-7Oc"; */
+"3VN-h6-7Oc.title" = "Not_Process";
+
+/* Class = "IBUIButton"; normalTitle = "刷新"; ObjectID = "3cv-4i-jEt"; */
+"3cv-4i-jEt.normalTitle" = "刷新";
+
+/* Class = "IBUILabel"; text = "變截高度"; ObjectID = "3dU-lB-kDW"; */
+"3dU-lB-kDW.text" = "變截高度";
+
+/* Class = "IBUILabel"; text = "損耗"; ObjectID = "46K-HO-GuJ"; */
+"46K-HO-GuJ.text" = "損耗";
+
+/* Class = "IBUILabel"; text = "長度(m)"; ObjectID = "4Gj-Up-mlz"; */
+"4Gj-Up-mlz.text" = "長度(m)";
+
+/* Class = "IBUILabel"; text = "B(mm)"; ObjectID = "4II-pR-mzH"; */
+"4II-pR-mzH.text" = "B(mm)";
+
+/* Class = "IBUIButton"; normalTitle = "刷新"; ObjectID = "4Iy-XG-4Ak"; */
+"4Iy-XG-4Ak.normalTitle" = "刷新";
+
+/* Class = "IBUILabel"; text = "(Kg)"; ObjectID = "4YZ-VV-dzn"; */
+"4YZ-VV-dzn.text" = "(Kg)";
+
+/* Class = "IBUILabel"; text = "項目名稱 : "; ObjectID = "4mi-y9-Ado"; */
+"4mi-y9-Ado.text" = "項目名稱 : ";
+
+/* Class = "IBUILabel"; text = "*"; ObjectID = "4o0-uZ-GiU"; */
+"4o0-uZ-GiU.text" = "*";
+
+/* Class = "IBUILabel"; text = "標準H型鋼對稱截面"; ObjectID = "4qu-qE-O9v"; */
+"4qu-qE-O9v.text" = "標準H型鋼對稱截面";
+
+/* Class = "IBUILabel"; text = "B1(mm)"; ObjectID = "508-il-aIH"; */
+"508-il-aIH.text" = "B1(mm)";
+
+/* Class = "IBUILabel"; text = "項目名稱 : "; ObjectID = "5Ie-ei-cSB"; */
+"5Ie-ei-cSB.text" = "項目名稱 : ";
+
+/* Class = "IBUILabel"; text = "厚(mm)"; ObjectID = "5Yj-pV-Lgb"; */
+"5Yj-pV-Lgb.text" = "厚(mm)";
+
+/* Class = "IBUILabel"; text = "*"; ObjectID = "5iw-rV-RD3"; */
+"5iw-rV-RD3.text" = "*";
+
+/* Class = "IBUILabel"; text = "邊厚(mm)"; ObjectID = "5mD-DO-9Op"; */
+"5mD-DO-9Op.text" = "邊厚(mm)";
+
+/* Class = "IBUILabel"; text = "H(mm)"; ObjectID = "5rU-ma-wQs"; */
+"5rU-ma-wQs.text" = "H(mm)";
+
+/* Class = "IBUILabel"; text = "損耗"; ObjectID = "5rg-Ew-pX5"; */
+"5rg-Ew-pX5.text" = "損耗";
+
+/* Class = "IBUIButton"; normalTitle = "加入表單"; ObjectID = "5x3-eF-kZ4"; */
+"5x3-eF-kZ4.normalTitle" = "加入表單";
+
+/* Class = "IBUILabel"; text = "*"; ObjectID = "618-7J-U1e"; */
+"618-7J-U1e.text" = "*";
+
+/* Class = "IBUILabel"; text = "t1(mm)"; ObjectID = "6P3-gG-Gf2"; */
+"6P3-gG-Gf2.text" = "t1(mm)";
+
+/* Class = "IBUILabel"; text = "t1(mm)"; ObjectID = "6Su-hQ-g8c"; */
+"6Su-hQ-g8c.text" = "t1(mm)";
+
+/* Class = "IBUITextField"; placeholder = "圓鋼型號"; ObjectID = "6d4-73-Cmj"; */
+"6d4-73-Cmj.placeholder" = "圓鋼型號";
+
+/* Class = "IBUILabel"; text = "*"; ObjectID = "6rX-x8-d0t"; */
+"6rX-x8-d0t.text" = "*";
+
+/* Class = "IBUILabel"; text = "(元/Kg)"; ObjectID = "6y8-RF-iXc"; */
+"6y8-RF-iXc.text" = "(元/Kg)";
+
+/* Class = "IBUILabel"; text = "變截"; ObjectID = "73g-aX-Lw8"; */
+"73g-aX-Lw8.text" = "變截";
+
+/* Class = "IBUILabel"; text = "(Kg)"; ObjectID = "7Hd-FY-513"; */
+"7Hd-FY-513.text" = "(Kg)";
+
+/* Class = "IBUILabel"; text = "*"; ObjectID = "7gw-bA-pUB"; */
+"7gw-bA-pUB.text" = "*";
+
+/* Class = "IBUILabel"; text = "跨度(M)"; ObjectID = "7hh-TT-9HL"; */
+"7hh-TT-9HL.text" = "跨度(M)";
+
+/* Class = "IBUITabBarItem"; title = "Price_Table"; ObjectID = "7nS-YM-4wA"; */
+"7nS-YM-4wA.title" = "Price_Table";
+
+/* Class = "IBUILabel"; text = "*"; ObjectID = "8H4-kg-E0m"; */
+"8H4-kg-E0m.text" = "*";
+
+/* Class = "IBUILabel"; text = "片數"; ObjectID = "8b2-lx-rb5"; */
+"8b2-lx-rb5.text" = "片數";
+
+/* Class = "IBUILabel"; text = "2"; ObjectID = "8cB-wr-0q8"; */
+"8cB-wr-0q8.text" = "2";
+
+/* Class = "IBUILabel"; text = "噴塗面積"; ObjectID = "8fn-Ho-mDh"; */
+"8fn-Ho-mDh.text" = "噴塗面積";
+
+/* Class = "IBUIButton"; normalTitle = "刷新"; ObjectID = "8i6-TO-5Jm"; */
+"8i6-TO-5Jm.normalTitle" = "刷新";
+
+/* Class = "IBUILabel"; text = "(Kg)"; ObjectID = "8kR-RJ-FfJ"; */
+"8kR-RJ-FfJ.text" = "(Kg)";
+
+/* Class = "IBUILabel"; text = "損耗"; ObjectID = "8rm-Ne-2Zr"; */
+"8rm-Ne-2Zr.text" = "損耗";
+
+/* Class = "IBUILabel"; text = " = 總重"; ObjectID = "940-Ue-SEl"; */
+"940-Ue-SEl.text" = " = 總重";
+
+/* Class = "IBUIButton"; normalTitle = "上一頁"; ObjectID = "958-PN-dyt"; */
+"958-PN-dyt.normalTitle" = "上一頁";
+
+/* Class = "IBUITextField"; placeholder = "工字鋼型號"; ObjectID = "97d-tM-sjz"; */
+"97d-tM-sjz.placeholder" = "工字鋼型號";
+
+/* Class = "IBUILabel"; text = "t1(mm)"; ObjectID = "9Ag-w5-dWs"; */
+"9Ag-w5-dWs.text" = "t1(mm)";
+
+/* Class = "IBUILabel"; text = "(mm)"; ObjectID = "9IW-uT-RzZ"; */
+"9IW-uT-RzZ.text" = "(mm)";
+
+/* Class = "IBUIButton"; normalTitle = "加入表單"; ObjectID = "9KK-Iz-S8u"; */
+"9KK-Iz-S8u.normalTitle" = "加入表單";
+
+/* Class = "IBUILabel"; text = "(Kg)"; ObjectID = "9d4-hJ-6xn"; */
+"9d4-hJ-6xn.text" = "(Kg)";
+
+/* Class = "IBUILabel"; text = "*"; ObjectID = "9nS-K3-IF7"; */
+"9nS-K3-IF7.text" = "*";
+
+/* Class = "IBUILabel"; text = "*"; ObjectID = "9sg-2n-VnI"; */
+"9sg-2n-VnI.text" = "*";
+
+/* Class = "IBUILabel"; text = ":"; ObjectID = "A8Y-MW-Y6z"; */
+"A8Y-MW-Y6z.text" = ":";
+
+/* Class = "IBUILabel"; text = "圓直徑(mm)"; ObjectID = "AJ2-NT-eoS"; */
+"AJ2-NT-eoS.text" = "圓直徑(mm)";
+
+/* Class = "IBUILabel"; text = "每噸多少元"; ObjectID = "AVY-JE-jiW"; */
+"AVY-JE-jiW.text" = "每噸多少元";
+
+/* Class = "IBUILabel"; text = "(mm)"; ObjectID = "AXC-bk-me6"; */
+"AXC-bk-me6.text" = "(mm)";
+
+/* Class = "IBUILabel"; text = "圓直徑(mm)"; ObjectID = "AaO-tC-o91"; */
+"AaO-tC-o91.text" = "圓直徑(mm)";
+
+/* Class = "IBUILabel"; text = "t1(mm)"; ObjectID = "AcZ-pN-LDX"; */
+"AcZ-pN-LDX.text" = "t1(mm)";
+
+/* Class = "IBUILabel"; text = "項目名稱 : "; ObjectID = "ArR-Fr-fTH"; */
+"ArR-Fr-fTH.text" = "項目名稱 : ";
+
+/* Class = "IBUIButton"; normalTitle = "刷新"; ObjectID = "BC5-NW-lL5"; */
+"BC5-NW-lL5.normalTitle" = "刷新";
+
+/* Class = "IBUILabel"; text = "天車縱行樑"; ObjectID = "BQM-og-t04"; */
+"BQM-og-t04.text" = "天車縱行樑";
+
+/* Class = "IBUILabel"; text = "損耗"; ObjectID = "Btf-kT-PKY"; */
+"Btf-kT-PKY.text" = "損耗";
+
+/* Class = "IBUILabel"; text = "揮發百分比"; ObjectID = "ByB-ba-0Gg"; */
+"ByB-ba-0Gg.text" = "揮發百分比";
+
+/* Class = "IBUIButton"; normalTitle = "加入表單"; ObjectID = "C8L-ea-FNY"; */
+"C8L-ea-FNY.normalTitle" = "加入表單";
+
+/* Class = "IBUILabel"; text = "上板"; ObjectID = "CRb-Gj-Ua8"; */
+"CRb-Gj-Ua8.text" = "上板";
+
+/* Class = "IBUILabel"; text = "*"; ObjectID = "CSS-UG-qPR"; */
+"CSS-UG-qPR.text" = "*";
+
+/* Class = "IBUILabel"; text = "項目名稱 : "; ObjectID = "CYJ-sg-PHK"; */
+"CYJ-sg-PHK.text" = "項目名稱 : ";
+
+/* Class = "IBUILabel"; text = "需要油漆(Kg)"; ObjectID = "CZI-0C-XGZ"; */
+"CZI-0C-XGZ.text" = "需要油漆(Kg)";
+
+/* Class = "IBUILabel"; text = "鋼板："; ObjectID = "Cez-ap-7R4"; */
+"Cez-ap-7R4.text" = "鋼板：";
+
+/* Class = "IBUILabel"; text = "H2(mm)"; ObjectID = "Cu4-Zj-ycC"; */
+"Cu4-Zj-ycC.text" = "H2(mm)";
+
+/* Class = "IBUILabel"; text = "噴塗面積"; ObjectID = "CuB-EF-VvJ"; */
+"CuB-EF-VvJ.text" = "噴塗面積";
+
+/* Class = "IBUILabel"; text = "*"; ObjectID = "D83-v4-IZ9"; */
+"D83-v4-IZ9.text" = "*";
+
+/* Class = "IBUILabel"; text = "寬(mm)"; ObjectID = "D96-6G-owP"; */
+"D96-6G-owP.text" = "寬(mm)";
+
+/* Class = "IBUILabel"; text = ":"; ObjectID = "DMn-Et-C3K"; */
+"DMn-Et-C3K.text" = ":";
+
+/* Class = "IBUILabel"; text = "*"; ObjectID = "Dfh-0G-SIA"; */
+"Dfh-0G-SIA.text" = "*";
+
+/* Class = "IBUILabel"; text = "需要油漆(公升)"; ObjectID = "DjH-rb-7LR"; */
+"DjH-rb-7LR.text" = "需要油漆(公升)";
+
+/* Class = "IBUILabel"; text = "項目名稱 : "; ObjectID = "DuC-gl-W4r"; */
+"DuC-gl-W4r.text" = "項目名稱 : ";
+
+/* Class = "IBUILabel"; text = "厚度(mm)"; ObjectID = "E35-zK-zU0"; */
+"E35-zK-zU0.text" = "厚度(mm)";
+
+/* Class = "IBUILabel"; text = "需要油漆(公升)"; ObjectID = "E8O-xz-Z5K"; */
+"E8O-xz-Z5K.text" = "需要油漆(公升)";
+
+/* Class = "IBUILabel"; text = "項目名稱: "; ObjectID = "EOt-VJ-DlN"; */
+"EOt-VJ-DlN.text" = "項目名稱: ";
+
+/* Class = "IBUILabel"; text = "*"; ObjectID = "ESj-Df-4c8"; */
+"ESj-Df-4c8.text" = "*";
+
+/* Class = "IBUILabel"; text = "*"; ObjectID = "Eyz-xu-Am2"; */
+"Eyz-xu-Am2.text" = "*";
+
+/* Class = "IBUILabel"; text = "(Kg)"; ObjectID = "F98-IF-jXk"; */
+"F98-IF-jXk.text" = "(Kg)";
+
+/* Class = "IBUITabBarItem"; title = "H型鋼通用表格"; ObjectID = "FE6-Wc-zMp"; */
+"FE6-Wc-zMp.title" = "H型鋼通用表格";
+
+/* Class = "IBUILabel"; text = "項目名稱 : "; ObjectID = "FS7-Nv-gE8"; */
+"FS7-Nv-gE8.text" = "項目名稱 : ";
+
+/* Class = "IBUILabel"; text = "噴塗面積"; ObjectID = "FW1-RI-IpC"; */
+"FW1-RI-IpC.text" = "噴塗面積";
+
+/* Class = "IBUILabel"; text = "2"; ObjectID = "Fhu-8W-JuU"; */
+"Fhu-8W-JuU.text" = "2";
+
+/* Class = "IBUILabel"; text = "H1(mm)"; ObjectID = "FkA-Wr-1GR"; */
+"FkA-Wr-1GR.text" = "H1(mm)";
+
+/* Class = "IBUILabel"; text = "*"; ObjectID = "FuY-c0-ofy"; */
+"FuY-c0-ofy.text" = "*";
+
+/* Class = "IBUILabel"; text = "(元/Kg)"; ObjectID = "G85-Sz-iur"; */
+"G85-Sz-iur.text" = "(元/Kg)";
+
+/* Class = "IBUILabel"; text = "項目名稱 : "; ObjectID = "GPJ-hh-aee"; */
+"GPJ-hh-aee.text" = "項目名稱 : ";
+
+/* Class = "IBUILabel"; text = "(m /Kg)"; ObjectID = "GZy-Xs-NkC"; */
+"GZy-Xs-NkC.text" = "(m /Kg)";
+
+/* Class = "IBUIButton"; normalTitle = "刷新"; ObjectID = "Gk5-4I-mqt"; */
+"Gk5-4I-mqt.normalTitle" = "刷新";
+
+/* Class = "IBUILabel"; text = "(Kg)"; ObjectID = "H0Q-H9-jUC"; */
+"H0Q-H9-jUC.text" = "(Kg)";
+
+/* Class = "IBUILabel"; text = "H(mm)"; ObjectID = "H2a-TK-hVQ"; */
+"H2a-TK-hVQ.text" = "H(mm)";
+
+/* Class = "IBUILabel"; text = "*"; ObjectID = "H3V-yJ-sqd"; */
+"H3V-yJ-sqd.text" = "*";
+
+/* Class = "IBUILabel"; text = "tw(mm)"; ObjectID = "H3f-P3-lJ5"; */
+"H3f-P3-lJ5.text" = "tw(mm)";
+
+/* Class = "IBUILabel"; text = "*"; ObjectID = "HHi-tq-bUK"; */
+"HHi-tq-bUK.text" = "*";
+
+/* Class = "IBUILabel"; text = "*"; ObjectID = "HNJ-C2-OKU"; */
+"HNJ-C2-OKU.text" = "*";
+
+/* Class = "IBUILabel"; text = ":"; ObjectID = "Hmi-ym-Vc7"; */
+"Hmi-ym-Vc7.text" = ":";
+
+/* Class = "IBUILabel"; text = "厚(mm)"; ObjectID = "IMk-pu-TTN"; */
+"IMk-pu-TTN.text" = "厚(mm)";
+
+/* Class = "IBUILabel"; text = "片數"; ObjectID = "IP9-ja-dp2"; */
+"IP9-ja-dp2.text" = "片數";
+
+/* Class = "IBUIButton"; normalTitle = "刷新"; ObjectID = "ISj-OO-f0L"; */
+"ISj-OO-f0L.normalTitle" = "刷新";
+
+/* Class = "IBUILabel"; text = "支數"; ObjectID = "IpW-tF-9nZ"; */
+"IpW-tF-9nZ.text" = "支數";
+
+/* Class = "IBUILabel"; text = "需要油漆(Kg)"; ObjectID = "IwW-ur-wsZ"; */
+"IwW-ur-wsZ.text" = "需要油漆(Kg)";
+
+/* Class = "IBUILabel"; text = "H2(mm)"; ObjectID = "JCm-gY-BQc"; */
+"JCm-gY-BQc.text" = "H2(mm)";
+
+/* Class = "IBUILabel"; text = "長度(m)"; ObjectID = "JHG-fb-nVU"; */
+"JHG-fb-nVU.text" = "長度(m)";
+
+/* Class = "IBUILabel"; text = "長度(m)"; ObjectID = "JRu-aH-k0B"; */
+"JRu-aH-k0B.text" = "長度(m)";
+
+/* Class = "IBUILabel"; text = "支數"; ObjectID = "Jna-oM-Ygv"; */
+"Jna-oM-Ygv.text" = "支數";
+
+/* Class = "IBUILabel"; text = "損耗"; ObjectID = "Juy-vm-meI"; */
+"Juy-vm-meI.text" = "損耗";
+
+/* Class = "IBUILabel"; text = "中板"; ObjectID = "KAh-VV-JNC"; */
+"KAh-VV-JNC.text" = "中板";
+
+/* Class = "IBUILabel"; text = "L(mm)"; ObjectID = "KIU-Do-17m"; */
+"KIU-Do-17m.text" = "L(mm)";
+
+/* Class = "IBUILabel"; text = "單位重(Kg)"; ObjectID = "KLM-64-G7M"; */
+"KLM-64-G7M.text" = "單位重(Kg)";
+
+/* Class = "IBUILabel"; text = "(百分比)"; ObjectID = "KW6-nR-5RK"; */
+"KW6-nR-5RK.text" = "(百分比)";
+
+/* Class = "IBUILabel"; text = "材料規格 : "; ObjectID = "KWb-rO-I6G"; */
+"KWb-rO-I6G.text" = "材料規格 : ";
+
+/* Class = "IBUILabel"; text = "*"; ObjectID = "KZv-Xc-Ox0"; */
+"KZv-Xc-Ox0.text" = "*";
+
+/* Class = "IBUILabel"; text = "*"; ObjectID = "Kfz-xE-7cY"; */
+"Kfz-xE-7cY.text" = "*";
+
+/* Class = "IBUILabel"; text = "支數"; ObjectID = "Kv3-2u-XSx"; */
+"Kv3-2u-XSx.text" = "支數";
+
+/* Class = "IBUILabel"; text = "*"; ObjectID = "L5L-x9-3Zq"; */
+"L5L-x9-3Zq.text" = "*";
+
+/* Class = "IBUILabel"; text = "損耗"; ObjectID = "L7a-Dt-l5L"; */
+"L7a-Dt-l5L.text" = "損耗";
+
+/* Class = "IBUILabel"; text = ":"; ObjectID = "L8F-0M-U11"; */
+"L8F-0M-U11.text" = ":";
+
+/* Class = "IBUILabel"; text = " = 總重"; ObjectID = "LHd-xY-KKE"; */
+"LHd-xY-KKE.text" = " = 總重";
+
+/* Class = "IBUILabel"; text = "噴塗面積"; ObjectID = "Lbp-cC-LqQ"; */
+"Lbp-cC-LqQ.text" = "噴塗面積";
+
+/* Class = "IBUILabel"; text = "損耗"; ObjectID = "Lm5-1T-pPE"; */
+"Lm5-1T-pPE.text" = "損耗";
+
+/* Class = "IBUILabel"; text = "材料規格 : "; ObjectID = "LoK-Op-MeL"; */
+"LoK-Op-MeL.text" = "材料規格 : ";
+
+/* Class = "IBUILabel"; text = "*"; ObjectID = "Lpv-BF-R8g"; */
+"Lpv-BF-R8g.text" = "*";
+
+/* Class = "IBUILabel"; text = "支數"; ObjectID = "Lwu-bK-ODW"; */
+"Lwu-bK-ODW.text" = "支數";
+
+/* Class = "IBUILabel"; text = "高(mm)"; ObjectID = "LxW-QF-bfm"; */
+"LxW-QF-bfm.text" = "高(mm)";
+
+/* Class = "IBUIButton"; normalTitle = "加入表單"; ObjectID = "Lxm-4j-buO"; */
+"Lxm-4j-buO.normalTitle" = "加入表單";
+
+/* Class = "IBUILabel"; text = "項目名稱 : "; ObjectID = "MNO-4J-gGd"; */
+"MNO-4J-gGd.text" = "項目名稱 : ";
+
+/* Class = "IBUILabel"; text = "百分比"; ObjectID = "MOB-hi-wvT"; */
+"MOB-hi-wvT.text" = "百分比";
+
+/* Class = "IBUILabel"; text = "*"; ObjectID = "Mdx-mr-Npr"; */
+"Mdx-mr-Npr.text" = "*";
+
+/* Class = "IBUILabel"; text = "油漆單價(元/升)"; ObjectID = "MsL-Xr-PYS"; */
+"MsL-Xr-PYS.text" = "油漆單價(元/升)";
+
+/* Class = "IBUILabel"; text = "槽鋼"; ObjectID = "NIn-Xb-1yR"; */
+"NIn-Xb-1yR.text" = "槽鋼";
+
+/* Class = "IBUILabel"; text = "  (Kg)"; ObjectID = "NMQ-CZ-hRc"; */
+"NMQ-CZ-hRc.text" = "  (Kg)";
+
+/* Class = "IBUILabel"; text = "W(mm)"; ObjectID = "NVq-eH-Utl"; */
+"NVq-eH-Utl.text" = "W(mm)";
+
+/* Class = "IBUIButton"; normalTitle = "加入表單"; ObjectID = "O3D-rm-KcX"; */
+"O3D-rm-KcX.normalTitle" = "加入表單";
+
+/* Class = "IBUIButton"; normalTitle = "加入表單"; ObjectID = "OJZ-tu-AYh"; */
+"OJZ-tu-AYh.normalTitle" = "加入表單";
+
+/* Class = "IBUILabel"; text = "*"; ObjectID = "ONq-Mk-uPO"; */
+"ONq-Mk-uPO.text" = "*";
+
+/* Class = "IBUIButton"; normalTitle = "刷新"; ObjectID = "OaH-SJ-U3i"; */
+"OaH-SJ-U3i.normalTitle" = "刷新";
+
+/* Class = "IBUILabel"; text = "H(mm)"; ObjectID = "Ovv-KD-BPv"; */
+"Ovv-KD-BPv.text" = "H(mm)";
+
+/* Class = "IBUILabel"; text = "*"; ObjectID = "P2T-yP-8jI"; */
+"P2T-yP-8jI.text" = "*";
+
+/* Class = "IBUILabel"; text = "*"; ObjectID = "P4I-1l-gfa"; */
+"P4I-1l-gfa.text" = "*";
+
+/* Class = "IBUILabel"; text = "支數"; ObjectID = "PGj-T9-v46"; */
+"PGj-T9-v46.text" = "支數";
+
+/* Class = "IBUILabel"; text = "*"; ObjectID = "PLb-cR-Uqd"; */
+"PLb-cR-Uqd.text" = "*";
+
+/* Class = "IBUIButton"; normalTitle = "加入表單"; ObjectID = "PYY-pe-aHz"; */
+"PYY-pe-aHz.normalTitle" = "加入表單";
+
+/* Class = "IBUILabel"; text = "*"; ObjectID = "Pde-To-FH0"; */
+"Pde-To-FH0.text" = "*";
+
+/* Class = "IBUILabel"; text = "支數"; ObjectID = "PqI-uK-xix"; */
+"PqI-uK-xix.text" = "支數";
+
+/* Class = "IBUILabel"; text = "t2(mm)"; ObjectID = "PxC-Kk-13T"; */
+"PxC-Kk-13T.text" = "t2(mm)";
+
+/* Class = "IBUILabel"; text = "支數"; ObjectID = "Q1m-Vk-IWl"; */
+"Q1m-Vk-IWl.text" = "支數";
+
+/* Class = "IBUILabel"; text = "*"; ObjectID = "QGh-pG-gtm"; */
+"QGh-pG-gtm.text" = "*";
+
+/* Class = "IBUIButton"; normalTitle = "加入表單"; ObjectID = "QHJ-2c-GXS"; */
+"QHJ-2c-GXS.normalTitle" = "加入表單";
+
+/* Class = "IBUILabel"; text = "油漆單價(元/升)"; ObjectID = "QXo-Jk-1iJ"; */
+"QXo-Jk-1iJ.text" = "油漆單價(元/升)";
+
+/* Class = "IBUILabel"; text = "*"; ObjectID = "Qnh-fY-Bsh"; */
+"Qnh-fY-Bsh.text" = "*";
+
+/* Class = "IBUILabel"; text = "*"; ObjectID = "Qti-WZ-geu"; */
+"Qti-WZ-geu.text" = "*";
+
+/* Class = "IBUILabel"; text = "圓管"; ObjectID = "R9V-Gp-hJW"; */
+"R9V-Gp-hJW.text" = "圓管";
+
+/* Class = "IBUILabel"; text = "*"; ObjectID = "RGL-X2-iPo"; */
+"RGL-X2-iPo.text" = "*";
+
+/* Class = "IBUILabel"; text = "C(mm)"; ObjectID = "RH9-1r-8fL"; */
+"RH9-1r-8fL.text" = "C(mm)";
+
+/* Class = "IBUILabel"; text = "支數"; ObjectID = "RL7-Pk-GNX"; */
+"RL7-Pk-GNX.text" = "支數";
+
+/* Class = "IBUILabel"; text = "圓鋼："; ObjectID = "ROM-87-Qce"; */
+"ROM-87-Qce.text" = "圓鋼：";
+
+/* Class = "IBUILabel"; text = "翼緣厚度"; ObjectID = "RW3-5U-OPB"; */
+"RW3-5U-OPB.text" = "翼緣厚度";
+
+/* Class = "IBUILabel"; text = "*"; ObjectID = "Rfg-3j-Ix2"; */
+"Rfg-3j-Ix2.text" = "*";
+
+/* Class = "IBUILabel"; text = ":"; ObjectID = "Rnr-4E-V6R"; */
+"Rnr-4E-V6R.text" = ":";
+
+/* Class = "IBUILabel"; text = "長度(m)"; ObjectID = "SH8-j3-gyM"; */
+"SH8-j3-gyM.text" = "長度(m)";
+
+/* Class = "IBUILabel"; text = "長度(m)"; ObjectID = "SHA-ln-WWk"; */
+"SHA-ln-WWk.text" = "長度(m)";
+
+/* Class = "IBUILabel"; text = "短邊"; ObjectID = "Sa4-3F-Bc3"; */
+"Sa4-3F-Bc3.text" = "短邊";
+
+/* Class = "IBUILabel"; text = "單位重"; ObjectID = "SbI-Pd-U6b"; */
+"SbI-Pd-U6b.text" = "單位重";
+
+/* Class = "IBUILabel"; text = "厚度(mm)"; ObjectID = "SoD-Ug-TMa"; */
+"SoD-Ug-TMa.text" = "厚度(mm)";
+
+/* Class = "IBUILabel"; text = "(Kg)"; ObjectID = "SsF-9J-8fj"; */
+"SsF-9J-8fj.text" = "(Kg)";
+
+/* Class = "IBUILabel"; text = "邊長(mm)"; ObjectID = "T1O-AU-9QO"; */
+"T1O-AU-9QO.text" = "邊長(mm)";
+
+/* Class = "IBUIButton"; normalTitle = "加入表單"; ObjectID = "T8a-oy-839"; */
+"T8a-oy-839.normalTitle" = "加入表單";
+
+/* Class = "IBUITextField"; placeholder = "等邊矩形管型號"; ObjectID = "TA8-EZ-f5h"; */
+"TA8-EZ-f5h.placeholder" = "等邊矩形管型號";
+
+/* Class = "IBUIButton"; normalTitle = "刷新"; ObjectID = "TEh-FK-uhV"; */
+"TEh-FK-uhV.normalTitle" = "刷新";
+
+/* Class = "IBUILabel"; text = "圓鋼"; ObjectID = "TLx-ar-g7Z"; */
+"TLx-ar-g7Z.text" = "圓鋼";
+
+/* Class = "IBUILabel"; text = "長(mm)"; ObjectID = "Te1-Bc-7V6"; */
+"Te1-Bc-7V6.text" = "長(mm)";
+
+/* Class = "IBUILabel"; text = "*"; ObjectID = "TkT-dj-LPa"; */
+"TkT-dj-LPa.text" = "*";
+
+/* Class = "IBUILabel"; text = "每噸多少元"; ObjectID = "Tmd-iy-36I"; */
+"Tmd-iy-36I.text" = "每噸多少元";
+
+/* Class = "IBUILabel"; text = "*"; ObjectID = "TpS-bQ-ioj"; */
+"TpS-bQ-ioj.text" = "*";
+
+/* Class = "IBUILabel"; text = "*"; ObjectID = "TsB-ni-gi7"; */
+"TsB-ni-gi7.text" = "*";
+
+/* Class = "IBUILabel"; text = "*"; ObjectID = "Tzj-ft-CXO"; */
+"Tzj-ft-CXO.text" = "*";
+
+/* Class = "IBUILabel"; text = "長度(m)"; ObjectID = "U3x-E1-O1Y"; */
+"U3x-E1-O1Y.text" = "長度(m)";
+
+/* Class = "IBUIButton"; normalTitle = "刷新"; ObjectID = "UGI-Gg-zqb"; */
+"UGI-Gg-zqb.normalTitle" = "刷新";
+
+/* Class = "IBUIButton"; normalTitle = "刷新"; ObjectID = "UGe-Nb-bco"; */
+"UGe-Nb-bco.normalTitle" = "刷新";
+
+/* Class = "IBUILabel"; text = "*"; ObjectID = "UH2-An-F3g"; */
+"UH2-An-F3g.text" = "*";
+
+/* Class = "IBUILabel"; text = ":"; ObjectID = "UJw-iX-Ys5"; */
+"UJw-iX-Ys5.text" = ":";
+
+/* Class = "IBUILabel"; text = "圓管："; ObjectID = "UYO-1p-TZC"; */
+"UYO-1p-TZC.text" = "圓管：";
+
+/* Class = "IBUILabel"; text = "支數"; ObjectID = "Us6-85-Gf7"; */
+"Us6-85-Gf7.text" = "支數";
+
+/* Class = "IBUILabel"; text = "損耗"; ObjectID = "V2u-Dy-bQi"; */
+"V2u-Dy-bQi.text" = "損耗";
+
+/* Class = "IBUILabel"; text = "項目名稱 : "; ObjectID = "VAM-s9-ChM"; */
+"VAM-s9-ChM.text" = "項目名稱 : ";
+
+/* Class = "IBUIButton"; normalTitle = "加入表單"; ObjectID = "VLH-Ne-m0H"; */
+"VLH-Ne-m0H.normalTitle" = "加入表單";
+
+/* Class = "IBUILabel"; text = "W(mm)"; ObjectID = "VUb-xR-PQF"; */
+"VUb-xR-PQF.text" = "W(mm)";
+
+/* Class = "IBUILabel"; text = "*"; ObjectID = "VwM-YC-Imq"; */
+"VwM-YC-Imq.text" = "*";
+
+/* Class = "IBUILabel"; text = " = 總重"; ObjectID = "Vwq-cK-F5B"; */
+"Vwq-cK-F5B.text" = " = 總重";
+
+/* Class = "IBUILabel"; text = "*"; ObjectID = "Vz7-MP-y7u"; */
+"Vz7-MP-y7u.text" = "*";
+
+/* Class = "IBUILabel"; text = "長(mm)"; ObjectID = "W63-nk-Ifi"; */
+"W63-nk-Ifi.text" = "長(mm)";
+
+/* Class = "IBUIButton"; normalTitle = "加入表單"; ObjectID = "WJT-kd-I66"; */
+"WJT-kd-I66.normalTitle" = "加入表單";
+
+/* Class = "IBUIButton"; normalTitle = "加入表單"; ObjectID = "WN9-go-QjB"; */
+"WN9-go-QjB.normalTitle" = "加入表單";
+
+/* Class = "IBUILabel"; text = "單位重"; ObjectID = "WUi-wu-RXD"; */
+"WUi-wu-RXD.text" = "單位重";
+
+/* Class = "IBUILabel"; text = "坡度"; ObjectID = "WZd-BE-pMO"; */
+"WZd-BE-pMO.text" = "坡度";
+
+/* Class = "IBUILabel"; text = "長邊"; ObjectID = "Whh-BB-S7j"; */
+"Whh-BB-S7j.text" = "長邊";
+
+/* Class = "IBUILabel"; text = "*"; ObjectID = "WjL-DU-kW2"; */
+"WjL-DU-kW2.text" = "*";
+
+/* Class = "IBUITextField"; placeholder = "不等邊角鋼型號"; ObjectID = "WuB-E5-uh9"; */
+"WuB-E5-uh9.placeholder" = "不等邊角鋼型號";
+
+/* Class = "IBUILabel"; text = "(Kg)"; ObjectID = "WwZ-GC-b1T"; */
+"WwZ-GC-b1T.text" = "(Kg)";
+
+/* Class = "IBUILabel"; text = ":"; ObjectID = "X21-LD-WXs"; */
+"X21-LD-WXs.text" = ":";
+
+/* Class = "IBUILabel"; text = "上板"; ObjectID = "X33-Jo-1XO"; */
+"X33-Jo-1XO.text" = "上板";
+
+/* Class = "IBUILabel"; text = "*"; ObjectID = "X3i-B4-6mZ"; */
+"X3i-B4-6mZ.text" = "*";
+
+/* Class = "IBUILabel"; text = "材料規格 : "; ObjectID = "XEN-bQ-jbv"; */
+"XEN-bQ-jbv.text" = "材料規格 : ";
+
+/* Class = "IBUILabel"; text = "損耗"; ObjectID = "XZh-bd-jEC"; */
+"XZh-bd-jEC.text" = "損耗";
+
+/* Class = "IBUIButton"; normalTitle = "刷新"; ObjectID = "XpQ-0C-eNK"; */
+"XpQ-0C-eNK.normalTitle" = "刷新";
+
+/* Class = "IBUILabel"; text = "需要油漆(Kg)"; ObjectID = "Y0M-zl-R51"; */
+"Y0M-zl-R51.text" = "需要油漆(Kg)";
+
+/* Class = "IBUILabel"; text = " = 總重"; ObjectID = "Y2n-Cg-tvF"; */
+"Y2n-Cg-tvF.text" = " = 總重";
+
+/* Class = "IBUILabel"; text = "油漆單價"; ObjectID = "Y7a-8u-SaE"; */
+"Y7a-8u-SaE.text" = "油漆單價";
+
+/* Class = "IBUILabel"; text = "*"; ObjectID = "YLu-Kj-AGP"; */
+"YLu-Kj-AGP.text" = "*";
+
+/* Class = "IBUILabel"; text = "材料規格 : "; ObjectID = "YNy-2t-ek2"; */
+"YNy-2t-ek2.text" = "材料規格 : ";
+
+/* Class = "IBUILabel"; text = "C型鋼："; ObjectID = "Ycw-sy-Vso"; */
+"Ycw-sy-Vso.text" = "C型鋼：";
+
+/* Class = "IBUILabel"; text = "*"; ObjectID = "Z4F-hw-xif"; */
+"Z4F-hw-xif.text" = "*";
+
+/* Class = "IBUILabel"; text = "單位重"; ObjectID = "Z8G-Dj-vJG"; */
+"Z8G-Dj-vJG.text" = "單位重";
+
+/* Class = "IBUILabel"; text = "工字鋼"; ObjectID = "Z9C-Ok-EAf"; */
+"Z9C-Ok-EAf.text" = "工字鋼";
+
+/* Class = "IBUILabel"; text = "2"; ObjectID = "ZM3-Ji-0j7"; */
+"ZM3-Ji-0j7.text" = "2";
+
+/* Class = "IBUILabel"; text = ":"; ObjectID = "ZZq-PP-OAb"; */
+"ZZq-PP-OAb.text" = ":";
+
+/* Class = "IBUIButton"; normalTitle = "加入表單"; ObjectID = "ZoH-FB-pqS"; */
+"ZoH-FB-pqS.normalTitle" = "加入表單";
+
+/* Class = "IBUILabel"; text = ":"; ObjectID = "Zuh-C0-LWr"; */
+"Zuh-C0-LWr.text" = ":";
+
+/* Class = "IBUILabel"; text = " = 總重"; ObjectID = "ZyN-Nb-6R6"; */
+"ZyN-Nb-6R6.text" = " = 總重";
+
+/* Class = "IBUILabel"; text = "直徑(mm)"; ObjectID = "a8s-PO-ER6"; */
+"a8s-PO-ER6.text" = "直徑(mm)";
+
+/* Class = "IBUILabel"; text = "*"; ObjectID = "aKK-ml-l3D"; */
+"aKK-ml-l3D.text" = "*";
+
+/* Class = "IBUILabel"; text = "(屋面樑坡度)"; ObjectID = "ahe-Z1-jBm"; */
+"ahe-Z1-jBm.text" = "(屋面樑坡度)";
+
+/* Class = "IBUILabel"; text = "材料規格 : "; ObjectID = "akW-hw-4Pl"; */
+"akW-hw-4Pl.text" = "材料規格 : ";
+
+/* Class = "IBUILabel"; text = "損耗"; ObjectID = "aua-9L-sDl"; */
+"aua-9L-sDl.text" = "損耗";
+
+/* Class = "IBUILabel"; text = ":"; ObjectID = "av7-aX-g6E"; */
+"av7-aX-g6E.text" = ":";
+
+/* Class = "IBUILabel"; text = "  (Kg)"; ObjectID = "bWR-HY-48U"; */
+"bWR-HY-48U.text" = "  (Kg)";
+
+/* Class = "IBUITabBarItem"; title = "圓鋼管通用表格"; ObjectID = "bXr-Ff-Tau"; */
+"bXr-Ff-Tau.title" = "圓鋼管通用表格";
+
+/* Class = "IBUILabel"; text = " = 總重"; ObjectID = "biI-lk-Sxd"; */
+"biI-lk-Sxd.text" = " = 總重";
+
+/* Class = "IBUILabel"; text = "寬(mm)"; ObjectID = "blS-e6-PJJ"; */
+"blS-e6-PJJ.text" = "寬(mm)";
+
+/* Class = "IBUILabel"; text = "*"; ObjectID = "bpa-ai-pX3"; */
+"bpa-ai-pX3.text" = "*";
+
+/* Class = "IBUILabel"; text = "長度(m)"; ObjectID = "byt-Eb-Sbg"; */
+"byt-Eb-Sbg.text" = "長度(m)";
+
+/* Class = "IBUITabBarItem"; title = "矩行管通用表格"; ObjectID = "c0I-uA-dH4"; */
+"c0I-uA-dH4.title" = "矩行管通用表格";
+
+/* Class = "IBUILabel"; text = "*"; ObjectID = "c7g-Eo-UL5"; */
+"c7g-Eo-UL5.text" = "*";
+
+/* Class = "IBUILabel"; text = "*"; ObjectID = "cJV-0J-VFN"; */
+"cJV-0J-VFN.text" = "*";
+
+/* Class = "IBUILabel"; text = "材料規格: "; ObjectID = "cK5-fD-LQz"; */
+"cK5-fD-LQz.text" = "材料規格: ";
+
+/* Class = "IBUILabel"; text = "寬(mm)"; ObjectID = "cP1-d2-fkS"; */
+"cP1-d2-fkS.text" = "寬(mm)";
+
+/* Class = "IBUILabel"; text = "單位重"; ObjectID = "cSI-H3-kfb"; */
+"cSI-H3-kfb.text" = "單位重";
+
+/* Class = "IBUILabel"; text = "＋"; ObjectID = "cUl-fj-ViB"; */
+"cUl-fj-ViB.text" = "＋";
+
+/* Class = "IBUILabel"; text = " = 總重"; ObjectID = "cVL-8H-umH"; */
+"cVL-8H-umH.text" = " = 總重";
+
+/* Class = "IBUILabel"; text = "(m /Kg)"; ObjectID = "cXy-Bd-oWE"; */
+"cXy-Bd-oWE.text" = "(m /Kg)";
+
+/* Class = "IBUILabel"; text = "*"; ObjectID = "caX-4I-ZXL"; */
+"caX-4I-ZXL.text" = "*";
+
+/* Class = "IBUILabel"; text = "B(mm)"; ObjectID = "ciV-jh-wwp"; */
+"ciV-jh-wwp.text" = "B(mm)";
+
+/* Class = "IBUITextField"; placeholder = "Z型鋼型號"; ObjectID = "cyu-TU-w37"; */
+"cyu-TU-w37.placeholder" = "Z型鋼型號";
+
+/* Class = "IBUILabel"; text = "變截高度"; ObjectID = "dL8-uM-le7"; */
+"dL8-uM-le7.text" = "變截高度";
+
+/* Class = "IBUIButton"; normalTitle = "上一頁"; ObjectID = "dTC-Kh-YXt"; */
+"dTC-Kh-YXt.normalTitle" = "上一頁";
+
+/* Class = "IBUILabel"; text = "長度(m)"; ObjectID = "dsd-dl-K6g"; */
+"dsd-dl-K6g.text" = "長度(m)";
+
+/* Class = "IBUILabel"; text = "每噸多少元"; ObjectID = "dum-xN-Vqv"; */
+"dum-xN-Vqv.text" = "每噸多少元";
+
+/* Class = "IBUILabel"; text = "*"; ObjectID = "e2x-By-nW6"; */
+"e2x-By-nW6.text" = "*";
+
+/* Class = "IBUILabel"; text = "*"; ObjectID = "e6s-VZ-M1G"; */
+"e6s-VZ-M1G.text" = "*";
+
+/* Class = "IBUILabel"; text = "損耗"; ObjectID = "eJW-hF-kdc"; */
+"eJW-hF-kdc.text" = "損耗";
+
+/* Class = "IBUILabel"; text = "*"; ObjectID = "eNc-lp-XOc"; */
+"eNc-lp-XOc.text" = "*";
+
+/* Class = "IBUILabel"; text = " = 總重"; ObjectID = "eOk-NI-3SV"; */
+"eOk-NI-3SV.text" = " = 總重";
+
+/* Class = "IBUILabel"; text = "變截"; ObjectID = "eQJ-4z-kux"; */
+"eQJ-4z-kux.text" = "變截";
+
+/* Class = "IBUILabel"; text = "*"; ObjectID = "ebg-Q0-vbK"; */
+"ebg-Q0-vbK.text" = "*";
+
+/* Class = "IBUILabel"; text = " = 總重"; ObjectID = "eg8-u8-IUY"; */
+"eg8-u8-IUY.text" = " = 總重";
+
+/* Class = "IBUILabel"; text = "損耗"; ObjectID = "egA-0L-keb"; */
+"egA-0L-keb.text" = "損耗";
+
+/* Class = "IBUILabel"; text = ":"; ObjectID = "ek6-mz-L7N"; */
+"ek6-mz-L7N.text" = ":";
+
+/* Class = "IBUILabel"; text = "變截高度"; ObjectID = "etd-9w-ZwY"; */
+"etd-9w-ZwY.text" = "變截高度";
+
+/* Class = "IBUIButton"; normalTitle = "加入表單"; ObjectID = "evi-k7-ZJg"; */
+"evi-k7-ZJg.normalTitle" = "加入表單";
+
+/* Class = "IBUILabel"; text = "  (Kg)"; ObjectID = "fBK-ml-IGe"; */
+"fBK-ml-IGe.text" = "  (Kg)";
+
+/* Class = "IBUIButton"; normalTitle = "刷新"; ObjectID = "fEX-uj-3Ds"; */
+"fEX-uj-3Ds.normalTitle" = "刷新";
+
+/* Class = "IBUILabel"; text = "需要油漆(公升)"; ObjectID = "fEf-BH-VDX"; */
+"fEf-BH-VDX.text" = "需要油漆(公升)";
+
+/* Class = "IBUITabBarItem"; title = "油漆計算"; ObjectID = "fKI-YI-RGs"; */
+"fKI-YI-RGs.title" = "油漆計算";
+
+/* Class = "IBUIButton"; normalTitle = "圓管(鋼)詳細規格"; ObjectID = "fLw-7O-Gcg"; */
+"fLw-7O-Gcg.normalTitle" = "圓管(鋼)詳細規格";
+
+/* Class = "IBUILabel"; text = "*"; ObjectID = "fUk-ae-wqv"; */
+"fUk-ae-wqv.text" = "*";
+
+/* Class = "IBUILabel"; text = ":"; ObjectID = "fYH-Sm-8hs"; */
+"fYH-Sm-8hs.text" = ":";
+
+/* Class = "IBUILabel"; text = "邊長(mm)"; ObjectID = "fZm-4Z-jxX"; */
+"fZm-4Z-jxX.text" = "邊長(mm)";
+
+/* Class = "IBUILabel"; text = "*"; ObjectID = "faF-Pt-NCD"; */
+"faF-Pt-NCD.text" = "*";
+
+/* Class = "IBUILabel"; text = "(元/Kg)"; ObjectID = "fkO-Bo-CcA"; */
+"fkO-Bo-CcA.text" = "(元/Kg)";
+
+/* Class = "IBUILabel"; text = "支數"; ObjectID = "gG9-9a-8yh"; */
+"gG9-9a-8yh.text" = "支數";
+
+/* Class = "IBUILabel"; text = "揮發百分比"; ObjectID = "gMq-gg-lTz"; */
+"gMq-gg-lTz.text" = "揮發百分比";
+
+/* Class = "IBUILabel"; text = "材料規格 : "; ObjectID = "gQ7-Na-5FW"; */
+"gQ7-Na-5FW.text" = "材料規格 : ";
+
+/* Class = "IBUILabel"; text = "t2(mm)"; ObjectID = "gX0-yh-CLI"; */
+"gX0-yh-CLI.text" = "t2(mm)";
+
+/* Class = "IBUIButton"; normalTitle = "加入表單"; ObjectID = "gXM-Gn-17y"; */
+"gXM-Gn-17y.normalTitle" = "加入表單";
+
+/* Class = "IBUILabel"; text = "H型鋼不對稱截面"; ObjectID = "gmJ-BG-dKd"; */
+"gmJ-BG-dKd.text" = "H型鋼不對稱截面";
+
+/* Class = "IBUILabel"; text = "B(mm)"; ObjectID = "gmd-pN-OfM"; */
+"gmd-pN-OfM.text" = "B(mm)";
+
+/* Class = "IBUILabel"; text = "項目名稱 : "; ObjectID = "goj-kw-22u"; */
+"goj-kw-22u.text" = "項目名稱 : ";
+
+/* Class = "IBUILabel"; text = "*"; ObjectID = "guA-Dq-brw"; */
+"guA-Dq-brw.text" = "*";
+
+/* Class = "IBUILabel"; text = "L(mm)"; ObjectID = "gzj-bE-gOx"; */
+"gzj-bE-gOx.text" = "L(mm)";
+
+/* Class = "IBUILabel"; text = "百分比"; ObjectID = "h45-rk-vJs"; */
+"h45-rk-vJs.text" = "百分比";
+
+/* Class = "IBUILabel"; text = "支數"; ObjectID = "h7f-PI-oIP"; */
+"h7f-PI-oIP.text" = "支數";
+
+/* Class = "IBUILabel"; text = "材料規格 : "; ObjectID = "hEO-NW-5uT"; */
+"hEO-NW-5uT.text" = "材料規格 : ";
+
+/* Class = "IBUIButton"; normalTitle = "下一頁"; ObjectID = "hIb-X8-gYI"; */
+"hIb-X8-gYI.normalTitle" = "下一頁";
+
+/* Class = "IBUIButton"; normalTitle = "加入表單"; ObjectID = "hNa-9V-5go"; */
+"hNa-9V-5go.normalTitle" = "加入表單";
+
+/* Class = "IBUILabel"; text = "(Kg)"; ObjectID = "hVK-oq-lq5"; */
+"hVK-oq-lq5.text" = "(Kg)";
+
+/* Class = "IBUILabel"; text = "*"; ObjectID = "hZn-bq-evi"; */
+"hZn-bq-evi.text" = "*";
+
+/* Class = "IBUILabel"; text = "t2(mm)"; ObjectID = "he7-EF-rkI"; */
+"he7-EF-rkI.text" = "t2(mm)";
+
+/* Class = "IBUILabel"; text = "損耗"; ObjectID = "hpb-dD-41O"; */
+"hpb-dD-41O.text" = "損耗";
+
+/* Class = "IBUILabel"; text = "(元/Kg)"; ObjectID = "i5w-pp-Xjw"; */
+"i5w-pp-Xjw.text" = "(元/Kg)";
+
+/* Class = "IBUILabel"; text = "支數"; ObjectID = "iP7-dg-P5q"; */
+"iP7-dg-P5q.text" = "支數";
+
+/* Class = "IBUILabel"; text = "*"; ObjectID = "iU4-4c-8LN"; */
+"iU4-4c-8LN.text" = "*";
+
+/* Class = "IBUILabel"; text = "*"; ObjectID = "iVQ-Ek-zT0"; */
+"iVQ-Ek-zT0.text" = "*";
+
+/* Class = "IBUILabel"; text = "H(mm)"; ObjectID = "iaU-Tf-ePj"; */
+"iaU-Tf-ePj.text" = "H(mm)";
+
+/* Class = "IBUILabel"; text = "*"; ObjectID = "ifb-JI-LX2"; */
+"ifb-JI-LX2.text" = "*";
+
+/* Class = "IBUILabel"; text = " = 總重"; ObjectID = "ijR-Ka-8g1"; */
+"ijR-Ka-8g1.text" = " = 總重";
+
+/* Class = "IBUILabel"; text = "材料規格 : "; ObjectID = "isr-K3-mW8"; */
+"isr-K3-mW8.text" = "材料規格 : ";
+
+/* Class = "IBUILabel"; text = "*"; ObjectID = "isy-vs-hHq"; */
+"isy-vs-hHq.text" = "*";
+
+/* Class = "IBUILabel"; text = "H型鋼不對稱截面："; ObjectID = "iv4-gw-RkR"; */
+"iv4-gw-RkR.text" = "H型鋼不對稱截面：";
+
+/* Class = "IBUILabel"; text = "材料規格 : "; ObjectID = "iwv-3d-kyH"; */
+"iwv-3d-kyH.text" = "材料規格 : ";
+
+/* Class = "IBUITextField"; placeholder = "C型鋼型號"; ObjectID = "jeg-cK-jYC"; */
+"jeg-cK-jYC.placeholder" = "C型鋼型號";
+
+/* Class = "IBUILabel"; text = "(m /Kg)"; ObjectID = "jl2-XZ-PDr"; */
+"jl2-XZ-PDr.text" = "(m /Kg)";
+
+/* Class = "IBUILabel"; text = "*"; ObjectID = "jry-d9-DFi"; */
+"jry-d9-DFi.text" = "*";
+
+/* Class = "IBUILabel"; text = "長度(m)"; ObjectID = "jue-Pg-zIy"; */
+"jue-Pg-zIy.text" = "長度(m)";
+
+/* Class = "IBUILabel"; text = "*"; ObjectID = "jxn-75-5rw"; */
+"jxn-75-5rw.text" = "*";
+
+/* Class = "IBUIButton"; normalTitle = "加入表單"; ObjectID = "k7y-Qx-sIT"; */
+"k7y-Qx-sIT.normalTitle" = "加入表單";
+
+/* Class = "IBUITabBarItem"; title = "其它"; ObjectID = "kGI-9R-ZgS"; */
+"kGI-9R-ZgS.title" = "其它";
+
+/* Class = "IBUILabel"; text = " = 總重"; ObjectID = "kON-a6-P5E"; */
+"kON-a6-P5E.text" = " = 總重";
+
+/* Class = "IBUILabel"; text = "外圓"; ObjectID = "kUD-n8-MBA"; */
+"kUD-n8-MBA.text" = "外圓";
+
+/* Class = "IBUILabel"; text = "材料規格: "; ObjectID = "kkz-aY-AoP"; */
+"kkz-aY-AoP.text" = "材料規格: ";
+
+/* Class = "IBUILabel"; text = "中板"; ObjectID = "kpw-0L-7qu"; */
+"kpw-0L-7qu.text" = "中板";
+
+/* Class = "IBUILabel"; text = "(Kg)"; ObjectID = "kpz-9f-eDb"; */
+"kpz-9f-eDb.text" = "(Kg)";
+
+/* Class = "IBUILabel"; text = " = 總重"; ObjectID = "l2I-VD-DUC"; */
+"l2I-VD-DUC.text" = " = 總重";
+
+/* Class = "IBUILabel"; text = "支數"; ObjectID = "l96-Z2-mKL"; */
+"l96-Z2-mKL.text" = "支數";
+
+/* Class = "IBUILabel"; text = "B(mm)"; ObjectID = "lbC-8r-adp"; */
+"lbC-8r-adp.text" = "B(mm)";
+
+/* Class = "IBUILabel"; text = "H(mm)"; ObjectID = "lmf-kW-4zg"; */
+"lmf-kW-4zg.text" = "H(mm)";
+
+/* Class = "IBUILabel"; text = "下板"; ObjectID = "lrz-Ax-rJn"; */
+"lrz-Ax-rJn.text" = "下板";
+
+/* Class = "IBUITabBarItem"; title = "Have_Process"; ObjectID = "m75-Ub-Yxl"; */
+"m75-Ub-Yxl.title" = "Have_Process";
+
+/* Class = "IBUILabel"; text = "長度(m)"; ObjectID = "mC2-j8-DH5"; */
+"mC2-j8-DH5.text" = "長度(m)";
+
+/* Class = "IBUILabel"; text = " = 總重"; ObjectID = "mF7-ee-LkK"; */
+"mF7-ee-LkK.text" = " = 總重";
+
+/* Class = "IBUILabel"; text = "*"; ObjectID = "mJq-j5-xEG"; */
+"mJq-j5-xEG.text" = "*";
+
+/* Class = "IBUILabel"; text = "B(mm)"; ObjectID = "mKa-3t-TK4"; */
+"mKa-3t-TK4.text" = "B(mm)";
+
+/* Class = "IBUILabel"; text = "*"; ObjectID = "mVV-vQ-keo"; */
+"mVV-vQ-keo.text" = "*";
+
+/* Class = "IBUILabel"; text = "*"; ObjectID = "meL-m2-r43"; */
+"meL-m2-r43.text" = "*";
+
+/* Class = "IBUILabel"; text = "*"; ObjectID = "mlK-iY-fLv"; */
+"mlK-iY-fLv.text" = "*";
+
+/* Class = "IBUILabel"; text = "油漆單價"; ObjectID = "mq1-Z8-i4a"; */
+"mq1-Z8-i4a.text" = "油漆單價";
+
+/* Class = "IBUILabel"; text = "*"; ObjectID = "mw5-mF-XAD"; */
+"mw5-mF-XAD.text" = "*";
+
+/* Class = "IBUILabel"; text = "材料規格 : "; ObjectID = "mxU-U9-rj5"; */
+"mxU-U9-rj5.text" = "材料規格 : ";
+
+/* Class = "IBUILabel"; text = "*"; ObjectID = "n1O-rZ-LOE"; */
+"n1O-rZ-LOE.text" = "*";
+
+/* Class = "IBUILabel"; text = "變截面H型鋼"; ObjectID = "nHc-hq-0aC"; */
+"nHc-hq-0aC.text" = "變截面H型鋼";
+
+/* Class = "IBUILabel"; text = "翼緣寬度"; ObjectID = "nIy-e6-VRa"; */
+"nIy-e6-VRa.text" = "翼緣寬度";
+
+/* Class = "IBUILabel"; text = " = 總重"; ObjectID = "nRE-fi-l4e"; */
+"nRE-fi-l4e.text" = " = 總重";
+
+/* Class = "IBUILabel"; text = "2"; ObjectID = "nRV-9x-VO7"; */
+"nRV-9x-VO7.text" = "2";
+
+/* Class = "IBUILabel"; text = "*"; ObjectID = "nkx-uw-rDW"; */
+"nkx-uw-rDW.text" = "*";
+
+/* Class = "IBUILabel"; text = ":"; ObjectID = "nqi-fU-SpL"; */
+"nqi-fU-SpL.text" = ":";
+
+/* Class = "IBUILabel"; text = "*"; ObjectID = "o2J-8y-y7y"; */
+"o2J-8y-y7y.text" = "*";
+
+/* Class = "IBUILabel"; text = "C(mm)"; ObjectID = "oGq-Td-THO"; */
+"oGq-Td-THO.text" = "C(mm)";
+
+/* Class = "IBUILabel"; text = "項目名稱 : "; ObjectID = "oML-Yi-tYY"; */
+"oML-Yi-tYY.text" = "項目名稱 : ";
+
+/* Class = "IBUILabel"; text = "矩形管"; ObjectID = "onf-hS-vQu"; */
+"onf-hS-vQu.text" = "矩形管";
+
+/* Class = "IBUILabel"; text = "外圓"; ObjectID = "oqy-LW-p1V"; */
+"oqy-LW-p1V.text" = "外圓";
+
+/* Class = "IBUILabel"; text = "揮發"; ObjectID = "ov7-zb-iZr"; */
+"ov7-zb-iZr.text" = "揮發";
+
+/* Class = "IBUITextField"; placeholder = "等邊角鋼型號"; ObjectID = "p9g-Pw-QUJ"; */
+"p9g-Pw-QUJ.placeholder" = "等邊角鋼型號";
+
+/* Class = "IBUIButton"; normalTitle = "刷新"; ObjectID = "pJ5-EL-SFX"; */
+"pJ5-EL-SFX.normalTitle" = "刷新";
+
+/* Class = "IBUILabel"; text = "(m /Kg)"; ObjectID = "pO8-8d-bAb"; */
+"pO8-8d-bAb.text" = "(m /Kg)";
+
+/* Class = "IBUILabel"; text = "*"; ObjectID = "pfD-KX-aiJ"; */
+"pfD-KX-aiJ.text" = "*";
+
+/* Class = "IBUIButton"; normalTitle = "加入表單"; ObjectID = "pv1-Wo-CvU"; */
+"pv1-Wo-CvU.normalTitle" = "加入表單";
+
+/* Class = "IBUILabel"; text = "t2(mm)"; ObjectID = "pzH-mY-for"; */
+"pzH-mY-for.text" = "t2(mm)";
+
+/* Class = "IBUILabel"; text = "*"; ObjectID = "qK3-K6-UDP"; */
+"qK3-K6-UDP.text" = "*";
+
+/* Class = "IBUILabel"; text = "*"; ObjectID = "qKQ-dc-Vkc"; */
+"qKQ-dc-Vkc.text" = "*";
+
+/* Class = "IBUILabel"; text = "*"; ObjectID = "qMj-qX-khD"; */
+"qMj-qX-khD.text" = "*";
+
+/* Class = "IBUILabel"; text = "油漆單價(元/升)"; ObjectID = "qeb-cH-GMW"; */
+"qeb-cH-GMW.text" = "油漆單價(元/升)";
+
+/* Class = "IBUILabel"; text = "*"; ObjectID = "qhM-i3-guu"; */
+"qhM-i3-guu.text" = "*";
+
+/* Class = "IBUILabel"; text = "*"; ObjectID = "qhp-KM-O2e"; */
+"qhp-KM-O2e.text" = "*";
+
+/* Class = "IBUILabel"; text = "長度(m)"; ObjectID = "qm3-cy-gM5"; */
+"qm3-cy-gM5.text" = "長度(m)";
+
+/* Class = "IBUILabel"; text = "B2(mm)"; ObjectID = "qm6-dP-Otc"; */
+"qm6-dP-Otc.text" = "B2(mm)";
+
+/* Class = "IBUILabel"; text = "*"; ObjectID = "qme-u7-j02"; */
+"qme-u7-j02.text" = "*";
+
+/* Class = "IBUILabel"; text = "支數"; ObjectID = "qqT-qL-yJr"; */
+"qqT-qL-yJr.text" = "支數";
+
+/* Class = "IBUILabel"; text = "材料規格: "; ObjectID = "qyQ-I9-8ke"; */
+"qyQ-I9-8ke.text" = "材料規格: ";
+
+/* Class = "IBUILabel"; text = "*"; ObjectID = "qyZ-5b-jkd"; */
+"qyZ-5b-jkd.text" = "*";
+
+/* Class = "IBUILabel"; text = "鋼板："; ObjectID = "r6q-R3-eEK"; */
+"r6q-R3-eEK.text" = "鋼板：";
+
+/* Class = "IBUILabel"; text = "*"; ObjectID = "rBI-0n-5It"; */
+"rBI-0n-5It.text" = "*";
+
+/* Class = "IBUITextField"; placeholder = "槽鋼型號"; ObjectID = "rMN-S7-RLy"; */
+"rMN-S7-RLy.placeholder" = "槽鋼型號";
+
+/* Class = "IBUILabel"; text = "材料規格 : "; ObjectID = "rcL-6o-0tK"; */
+"rcL-6o-0tK.text" = "材料規格 : ";
+
+/* Class = "IBUILabel"; text = "翼緣寬度"; ObjectID = "rfp-zE-95u"; */
+"rfp-zE-95u.text" = "翼緣寬度";
+
+/* Class = "IBUILabel"; text = "單位重"; ObjectID = "rgo-MA-955"; */
+"rgo-MA-955.text" = "單位重";
+
+/* Class = "IBUILabel"; text = "*"; ObjectID = "rrE-hx-rDL"; */
+"rrE-hx-rDL.text" = "*";
+
+/* Class = "IBUILabel"; text = "直徑(mm)"; ObjectID = "sFP-R1-veZ"; */
+"sFP-R1-veZ.text" = "直徑(mm)";
+
+/* Class = "IBUILabel"; text = "*"; ObjectID = "sN0-dB-UTk"; */
+"sN0-dB-UTk.text" = "*";
+
+/* Class = "IBUILabel"; text = "單位重"; ObjectID = "sQX-6s-MDg"; */
+"sQX-6s-MDg.text" = "單位重";
+
+/* Class = "IBUILabel"; text = ":"; ObjectID = "sXw-dc-2W7"; */
+"sXw-dc-2W7.text" = ":";
+
+/* Class = "IBUILabel"; text = "需要油漆(公升)"; ObjectID = "seM-Ze-Gtq"; */
+"seM-Ze-Gtq.text" = "需要油漆(公升)";
+
+/* Class = "IBUILabel"; text = "(Kg)"; ObjectID = "ska-IN-saz"; */
+"ska-IN-saz.text" = "(Kg)";
+
+/* Class = "IBUIButton"; normalTitle = "刷新"; ObjectID = "szu-9e-vVe"; */
+"szu-9e-vVe.normalTitle" = "刷新";
+
+/* Class = "IBUILabel"; text = "揮發"; ObjectID = "t3M-Dz-tFv"; */
+"t3M-Dz-tFv.text" = "揮發";
+
+/* Class = "IBUILabel"; text = "(Kg)"; ObjectID = "tAG-dP-UWk"; */
+"tAG-dP-UWk.text" = "(Kg)";
+
+/* Class = "IBUILabel"; text = "(Kg)"; ObjectID = "tDd-Fh-Pga"; */
+"tDd-Fh-Pga.text" = "(Kg)";
+
+/* Class = "IBUILabel"; text = "每噸多少元"; ObjectID = "tE5-fr-3W8"; */
+"tE5-fr-3W8.text" = "每噸多少元";
+
+/* Class = "IBUILabel"; text = "*"; ObjectID = "tQG-Cr-YK5"; */
+"tQG-Cr-YK5.text" = "*";
+
+/* Class = "IBUILabel"; text = "*"; ObjectID = "tTK-P0-05f"; */
+"tTK-P0-05f.text" = "*";
+
+/* Class = "IBUILabel"; text = "油漆單價"; ObjectID = "tY3-eu-Tlj"; */
+"tY3-eu-Tlj.text" = "油漆單價";
+
+/* Class = "IBUILabel"; text = "腹板厚度"; ObjectID = "tdt-3F-txR"; */
+"tdt-3F-txR.text" = "腹板厚度";
+
+/* Class = "IBUILabel"; text = "*"; ObjectID = "tiu-Vc-ovQ"; */
+"tiu-Vc-ovQ.text" = "*";
+
+/* Class = "IBUILabel"; text = "(Kg)"; ObjectID = "u3Y-ig-x4M"; */
+"u3Y-ig-x4M.text" = "(Kg)";
+
+/* Class = "IBUIButton"; normalTitle = "H型鋼詳細規格"; ObjectID = "uEn-Ig-GXg"; */
+"uEn-Ig-GXg.normalTitle" = "H型鋼詳細規格";
+
+/* Class = "IBUILabel"; text = ":"; ObjectID = "uY6-qX-uLN"; */
+"uY6-qX-uLN.text" = ":";
+
+/* Class = "IBUILabel"; text = "損耗"; ObjectID = "ujL-lE-3oo"; */
+"ujL-lE-3oo.text" = "損耗";
+
+/* Class = "IBUILabel"; text = "*"; ObjectID = "upf-Fw-Pzb"; */
+"upf-Fw-Pzb.text" = "*";
+
+/* Class = "IBUILabel"; text = "長(mm)"; ObjectID = "vUO-W1-HfB"; */
+"vUO-W1-HfB.text" = "長(mm)";
+
+/* Class = "IBUILabel"; text = "變截高度"; ObjectID = "vXd-nd-THq"; */
+"vXd-nd-THq.text" = "變截高度";
+
+/* Class = "IBUILabel"; text = "翼緣厚度"; ObjectID = "vhv-uT-aGZ"; */
+"vhv-uT-aGZ.text" = "翼緣厚度";
+
+/* Class = "IBUILabel"; text = "(Kg)"; ObjectID = "w7s-Yt-826"; */
+"w7s-Yt-826.text" = "(Kg)";
+
+/* Class = "IBUILabel"; text = "油漆單價"; ObjectID = "wBE-e4-Agw"; */
+"wBE-e4-Agw.text" = "油漆單價";
+
+/* Class = "IBUIButton"; normalTitle = "刷新"; ObjectID = "wRa-7B-hnK"; */
+"wRa-7B-hnK.normalTitle" = "刷新";
+
+/* Class = "IBUILabel"; text = "支數"; ObjectID = "wZC-R6-Y0s"; */
+"wZC-R6-Y0s.text" = "支數";
+
+/* Class = "IBUILabel"; text = "*"; ObjectID = "waL-uO-1al"; */
+"waL-uO-1al.text" = "*";
+
+/* Class = "IBUILabel"; text = "*"; ObjectID = "wiG-5H-5v5"; */
+"wiG-5H-5v5.text" = "*";
+
+/* Class = "IBUILabel"; text = "變截面H型鋼"; ObjectID = "x1S-Bv-O5D"; */
+"x1S-Bv-O5D.text" = "變截面H型鋼";
+
+/* Class = "IBUIButton"; normalTitle = "刷新"; ObjectID = "x5C-Vu-Gts"; */
+"x5C-Vu-Gts.normalTitle" = "刷新";
+
+/* Class = "IBUILabel"; text = "項目名稱 : "; ObjectID = "x7Q-Pj-D5e"; */
+"x7Q-Pj-D5e.text" = "項目名稱 : ";
+
+/* Class = "IBUILabel"; text = "*"; ObjectID = "xE7-T5-bfh"; */
+"xE7-T5-bfh.text" = "*";
+
+/* Class = "IBUILabel"; text = "角鋼"; ObjectID = "xGU-dt-nz1"; */
+"xGU-dt-nz1.text" = "角鋼";
+
+/* Class = "IBUILabel"; text = "噴塗面數"; ObjectID = "xNS-dk-mws"; */
+"xNS-dk-mws.text" = "噴塗面數";
+
+/* Class = "IBUILabel"; text = "下板"; ObjectID = "xPS-B0-PNo"; */
+"xPS-B0-PNo.text" = "下板";
+
+/* Class = "IBUILabel"; text = "*"; ObjectID = "xPb-3x-Ege"; */
+"xPb-3x-Ege.text" = "*";
+
+/* Class = "IBUILabel"; text = "材料規格 : "; ObjectID = "xte-xQ-0g5"; */
+"xte-xQ-0g5.text" = "材料規格 : ";
+
+/* Class = "IBUILabel"; text = "單位重"; ObjectID = "xu2-Fm-ymX"; */
+"xu2-Fm-ymX.text" = "單位重";
+
+/* Class = "IBUILabel"; text = "*"; ObjectID = "y0o-97-Z9l"; */
+"y0o-97-Z9l.text" = "*";
+
+/* Class = "IBUILabel"; text = "需要油漆(Kg)"; ObjectID = "yN1-ua-CrJ"; */
+"yN1-ua-CrJ.text" = "需要油漆(Kg)";
+
+/* Class = "IBUILabel"; text = "*"; ObjectID = "ynU-jZ-YmQ"; */
+"ynU-jZ-YmQ.text" = "*";
+
+/* Class = "IBUITextField"; placeholder = "不等邊矩形管型號"; ObjectID = "yqG-cZ-k5y"; */
+"yqG-cZ-k5y.placeholder" = "不等邊矩形管型號";
+
+/* Class = "IBUILabel"; text = "長度(m)"; ObjectID = "yxh-zW-lZG"; */
+"yxh-zW-lZG.text" = "長度(m)";
+
+/* Class = "IBUILabel"; text = "*"; ObjectID = "zFk-VQ-Wz6"; */
+"zFk-VQ-Wz6.text" = "*";
+
+/* Class = "IBUILabel"; text = "腹板厚度"; ObjectID = "zWI-fM-tlk"; */
+"zWI-fM-tlk.text" = "腹板厚度";
+
+/* Class = "IBUILabel"; text = ":"; ObjectID = "zYa-em-Qcb"; */
+"zYa-em-Qcb.text" = ":";
+
+/* Class = "IBUILabel"; text = "油漆單價(元/升)"; ObjectID = "zdm-Gr-fHx"; */
+"zdm-Gr-fHx.text" = "油漆單價(元/升)";
+
+/* Class = "IBUILabel"; text = "材料規格 : "; ObjectID = "zfp-QT-b82"; */
+"zfp-QT-b82.text" = "材料規格 : ";
+
+/* Class = "IBUILabel"; text = "*"; ObjectID = "zgi-gj-zXw"; */
+"zgi-gj-zXw.text" = "*";

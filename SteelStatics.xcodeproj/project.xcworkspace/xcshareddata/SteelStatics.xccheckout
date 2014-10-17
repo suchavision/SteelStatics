@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>535B8E81-1AC7-43F1-ABFA-BE68B835C8B8</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>26E963DC22FD06D98DE1B6EF1AE2C393AAFA2326</key>
+		<string>https://github.com/OUJHEYU/SteelStatics.git</string>
+		<key>382CF808FA8CFA837D2AEBBBB6B28956273A1D3B</key>
+		<string>https://github.com/isaacselement/Modules.git</string>
+	</dict>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>26E963DC22FD06D98DE1B6EF1AE2C393AAFA2326</key>
+		<string>SteelStatics</string>
+		<key>382CF808FA8CFA837D2AEBBBB6B28956273A1D3B</key>
+		<string>Modules</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/isaacselement/Modules.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>382CF808FA8CFA837D2AEBBBB6B28956273A1D3B</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>382CF808FA8CFA837D2AEBBBB6B28956273A1D3B</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Modules</string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>26E963DC22FD06D98DE1B6EF1AE2C393AAFA2326</string>
+			<key>IDESourceControlWCCName</key>
+			<string>SteelStatics</string>
+		</dict>
+	</array>
+</dict>
+</plist>
