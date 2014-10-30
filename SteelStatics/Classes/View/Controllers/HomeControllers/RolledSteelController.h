@@ -1,7 +1,8 @@
 #import "CaculateBaseController.h"
 
-
+@class SpecificationTextField;
 @class SpecificationTableTextField;
+
 @class CaculateTextField;
 @class BaseTextField;
 @class NumberTextField;
@@ -226,10 +227,11 @@
 @property (weak, nonatomic) IBOutlet SpecificationTableTextField *uSteelSpecTx;
 @property (weak, nonatomic) IBOutlet SpecificationTableTextField *equalRectTubeSpecTx;
 @property (weak, nonatomic) IBOutlet SpecificationTableTextField *notEqualRectTubeSpecTx;
-@property (weak, nonatomic) IBOutlet SpecificationTableTextField *circleSteelSpecTx;
-@property (weak, nonatomic) IBOutlet SpecificationTableTextField *cStyleSteelSpecTx;
-@property (weak, nonatomic) IBOutlet SpecificationTableTextField *zStyleSteelSpecTx;
-@property (weak, nonatomic) IBOutlet SpecificationTableTextField *equalAngleSteelSpecTx;
-@property (weak, nonatomic) IBOutlet SpecificationTableTextField *notEqualAngleSteelSpecTx;
+
+@property (weak, nonatomic) IBOutlet SpecificationTextField *circleSteelSpecTx;
+@property (weak, nonatomic) IBOutlet SpecificationTextField *cStyleSteelSpecTx;
+@property (weak, nonatomic) IBOutlet SpecificationTextField *zStyleSteelSpecTx;
+@property (weak, nonatomic) IBOutlet SpecificationTextField *equalAngleSteelSpecTx;
+//@property (weak, nonatomic) IBOutlet SpecificationTextField *notEqualAngleSteelSpecTx;
 
 @end

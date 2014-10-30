@@ -17,4 +17,9 @@
 +(ViewManager*) shareInstance;
 
 
+
+#pragma mark - Public Methods
+
+-(void) showHint: (NSString*)string;
+
 @end

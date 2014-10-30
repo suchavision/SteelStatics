@@ -12,11 +12,6 @@
 @synthesize uSteelSpecTx;
 @synthesize equalRectTubeSpecTx;
 @synthesize notEqualRectTubeSpecTx;
-@synthesize circleSteelSpecTx;
-@synthesize cStyleSteelSpecTx;
-@synthesize zStyleSteelSpecTx;
-@synthesize equalAngleSteelSpecTx;
-@synthesize notEqualAngleSteelSpecTx;
 
 
 //標準H型鋼對稱 caculate field
@@ -102,11 +97,11 @@
     [self setPopupTableDataSource: uSteelSpecTx key:@"uSteelSpecTx"];
     [self setPopupTableDataSource: equalRectTubeSpecTx key:@"equalRectTubeSpecTx"];
     [self setPopupTableDataSource: notEqualRectTubeSpecTx key:@"notEqualRectTubeSpecTx"];
-    [self setPopupTableDataSource: circleSteelSpecTx key:@"circleSteelSpecTx"];
-    [self setPopupTableDataSource: cStyleSteelSpecTx key:@"cStyleSteelSpecTx"];
-    [self setPopupTableDataSource: zStyleSteelSpecTx key:@"zStyleSteelSpecTx"];
-    [self setPopupTableDataSource: equalAngleSteelSpecTx key:@"equalAngleSteelSpecTx"];
-    [self setPopupTableDataSource: notEqualAngleSteelSpecTx key:@"notEqualAngleSteelSpecTx"];
+//    [self setPopupTableDataSource: circleSteelSpecTx key:@"circleSteelSpecTx"];
+//    [self setPopupTableDataSource: equalAngleSteelSpecTx key:@"equalAngleSteelSpecTx"];
+//    [self setPopupTableDataSource: notEqualAngleSteelSpecTx key:@"notEqualAngleSteelSpecTx"];
+//    [self setPopupTableDataSource: cStyleSteelSpecTx key:@"cStyleSteelSpecTx"];
+//    [self setPopupTableDataSource: zStyleSteelSpecTx key:@"zStyleSteelSpecTx"];
     
     [self Creat];
     
@@ -135,33 +130,21 @@
     ValueView* editValueView = [SSViewHelper getSuperValueViewBySubView: textField];
     
     if ([SSViewHelper getSuperValueViewBySubView:zsteel] == editValueView) {
-        if ([zStyleSteelSpecTx.text isEqualToString:@""]){
-            zsteel.value = (0.00785 * zsteelthick.value * (zsteelh.value + 2 * zsteelb.value + 2 * zsteelc.value)) * zsteelm.value * zsteelpcs.value * (zsteelloss.value / 100 + 1);
-        }else{
-            zsteel.value = 4.233 * zsteelm.value * zsteelpcs.value * (zsteelloss.value / 100 + 1);
-        }
+        zsteel.value = (0.00785 * zsteelthick.value * (zsteelh.value + 2 * zsteelb.value + 2 * zsteelc.value)) * zsteelm.value * zsteelpcs.value * (zsteelloss.value / 100 + 1);
     }
-    
+    else
     if ([SSViewHelper getSuperValueViewBySubView:csteel] == editValueView) {
-        if ([cStyleSteelSpecTx.text isEqualToString:@""]) {
-            csteel.value = (0.00785 * csteelthick.value * (csteelh.value + 2 * csteelb.value + 2 * csteelc.value)) * csteelm.value * csteelpcs.value * (csteelloss.value / 100 + 1);
-        }else{
-            csteel.value = csteelkg.value * csteelm.value * csteelpcs.value * (csteelloss.value / 100 + 1);
-        }
+        csteel.value = (0.00785 * csteelthick.value * (csteelh.value + 2 * csteelb.value + 2 * csteelc.value)) * csteelm.value * csteelpcs.value * (csteelloss.value / 100 + 1);
     }
-    
+    else
     if ([SSViewHelper getSuperValueViewBySubView:hsteelsymmetry] == editValueView) {
         hsteelsymmetry.value = hsteelsymmetrykg.value * hsteelsymmetrym.value * hsteelsymmetrypcs.value * (hsteelsymmetryloss.value / 100 +1);
     }
-    
+    else
     if ([SSViewHelper getSuperValueViewBySubView:angles] == editValueView) {
-        if ([zStyleSteelSpecTx.text isEqualToString:@""]&&[notEqualAngleSteelSpecTx.text isEqualToString:@""] &&[notEqualAngleSteelSpecTx.text isEqualToString:@""]){
-            angles.value = (0.00785 * anglethick.value * (angleside1.value + angleside2.value - anglethick.value)) * anglem.value * anglepcs.value * (angleloss.value / 100 + 1);
-        }else{
-            angles.value = anglekg.value * anglem.value * anglepcs.value * (angleloss.value / 100 + 1);
-        }
+        angles.value = (0.00785 * anglethick.value * (angleside1.value + angleside2.value - anglethick.value)) * anglem.value * anglepcs.value * (angleloss.value / 100 + 1) * 1.017;
     }
-    
+    else
     if ([SSViewHelper getSuperValueViewBySubView:girder] == editValueView) {
         girder.value = girderkg.value * girderm.value * girderpcs.value * (girderloss.value / 100 + 1);
     }
@@ -169,7 +152,7 @@
     if ([SSViewHelper getSuperValueViewBySubView:channel] == editValueView) {
         channel.value = channelkg.value * channelm.value * channelpcs.value * (channelpcs.value / 100 + 1);
     }
-    
+    else
     if ([SSViewHelper getSuperValueViewBySubView:rectanglepipe] == editValueView) {
         if ([equalRectTubeSpecTx.text isEqualToString:@""]&&[notEqualRectTubeSpecTx.text isEqualToString:@""]){
             rectanglepipe.value = ((rectanglepipelong.value + rectanglepipeshort.value - 2 * rectanglepipethick.value) * rectanglepipethick.value * 0.0157) * rectanglepipem.value * rectanglepipepcs.value * (rectanglepipeloss.value / 100 + 1);
@@ -177,37 +160,33 @@
             rectanglepipe.value = rectanglepipekg.value * rectanglepipem.value * rectanglepipepcs.value * (rectanglepipeloss.value / 100 + 1);
         }
     }
-    
+    else
     if ([SSViewHelper getSuperValueViewBySubView:circlesteel] == editValueView) {
-        if ([circleSteelSpecTx.text isEqualToString:@""]){
-            circlesteel.value = (0.00617 * circlesteeldiamter.value * circlesteeldiamter.value) * circlesteelm.value * circlesteelpcs.value * (circlesteelloss.value / 100 + 1);
-        }else{
-            circlesteel.value = circlesteelkg.value * circlesteelm.value * circlesteelpcs.value * (circlesteelloss.value / 100 + 1);
-        }
+        circlesteel.value = (0.00617 * circlesteeldiamter.value * circlesteeldiamter.value) * circlesteelm.value * circlesteelpcs.value * (circlesteelloss.value / 100 + 1);
     }
-    
+    else
     if ([SSViewHelper getSuperValueViewBySubView:hsection] == editValueView) {
         hsection.value = ((hsectionh1.value + hsectionh2.value) / 2 * hsectiont1.value * 0.00785 + hsectionb.value * hsectiont2.value * 2 * 0.00785) * hsectionm.value * hsectionpcs.value * (hsectionloss.value / 100 + 1);
     }
-    
+    else
     if ([SSViewHelper getSuperValueViewBySubView:bridge] == editValueView) {
         bridge.value = ((bridgeh1.value + bridgeh2.value) / 2 * bridget1.value * 0.00785 + bridgeb.value * bridget2.value * 2 * 0.00785) * bridgem.value * bridgepcs.value * (sqrtf(100 * 100 + bridgewater.value * bridgewater.value) / 100) * (bridgeloss.value / 100 + 1);
     }
-    
+    else
     if ([SSViewHelper getSuperValueViewBySubView:overhead] == editValueView) {
         overhead.value = ((overheadmidl.value * overheadw.value * overheadm.value * 0.00785) + (overheadtopl.value * overheadtopw.value * overheadm.value * 0.00785) + (overheadlowerl.value * overheadlowerw.value * (overheadm.value + ((overheadmidl.value - overheadoxh.value) / 500)) * 0.00785)) * overheadpcs.value * (overheadloss.value / 100 + 1);
     }
-    
+    else
     if ([SSViewHelper getSuperValueViewBySubView:board] == editValueView) {
         board.value = (boardl.value * boardw.value * boardh.value * 0.00000785) * boardpcs.value * (boardloss.value / 100 + 1);
     }
-    
+    else
     if ([SSViewHelper getSuperValueViewBySubView:circlepipe] == editValueView) {
         circlepipe.value = (0.02466 * circlepipethick.value * (circlepipediamter.value - circlepipethick.value)) * circlepipem.value * circlepipepcs.value * (circlepipeloss.value / 100 + 1);
     }
-    
+    else
     if ([SSViewHelper getSuperValueViewBySubView:hsteelasymmetrical] == editValueView) {
-        hsteelasymmetrical.value = (((hsteelasymmetricalh.value - hsteelasymmetricalt1.value - hsteelasymmetricalt2.value)*hsteelasymmetricaltw.value*0.00785)+(hsteelasymmetricalb1.value*hsteelasymmetricalt1.value*0.00785)+(hsteelasymmetricalb2.value*hsteelasymmetricalt2.value*0.00785))*hsteelasymmetricalm.value*hsteelasymmetricalpcs.value*(hsteelasymmetricalloss.value / 100 + 1);
+        hsteelasymmetrical.value = ((hsteelasymmetricalh.value*hsteelasymmetricaltw.value*0.00785)+(hsteelasymmetricalb1.value*hsteelasymmetricalt1.value*0.00785)+(hsteelasymmetricalb2.value*hsteelasymmetricalt2.value*0.00785))*hsteelasymmetricalm.value*hsteelasymmetricalpcs.value*(hsteelasymmetricalloss.value / 100 + 1);
     }
 }
 
@@ -256,8 +235,7 @@
     [SSViewHelper setViewsHiddenYes:hiddenYesViews];
     
     rectanglepipelonglabel.text = @"(mm)";
-    [zStyleSteelSpecTx becomeFirstResponder];
-    [zStyleSteelSpecTx resignFirstResponder];
+
     [r3 setOriginX:CanvasX(498)];
     [rectanglepipem setOriginX:CanvasX(369)];
     [rectanglepipepcs setOriginX:CanvasX(439)];
@@ -307,7 +285,6 @@
     [SSViewHelper setViewsHiddenYes:hiddenYesViews];
     
     zsteelhlabel.text = @"H(mm)";
-    zStyleSteelSpecTx.text = @"";
     [zsteelm setOriginX:CanvasX(409)];
     [zsteelpcs setOriginX:CanvasX(471)];
     [zsteelloss setOriginX:CanvasX(533)];
@@ -332,9 +309,6 @@
     [anglesmlabel setOriginX:CanvasX(402)];
     [anglespcslabel setOriginX:CanvasX(492)];
     [angleslosslabel setOriginX:CanvasX(571)];
-    
-    notEqualAngleSteelSpecTx.enabled = YES;
-    zStyleSteelSpecTx.enabled = YES;
 }
 
 -(void)Creat
@@ -402,47 +376,6 @@
     
     
     
-    // ----------
-    circleSteelSpecTx.didSelectTextInTableAction = ^void(SpecificationTableTextField* tx) {
-        [weakSelf autoFillFirstFieldWhenSpecificationTableTextFieldSelected: tx];
-        
-        NSArray* hiddenYesViews = @[weakSelf.circlesteeldiamter,weakSelf.circlesteeldiamterlabel];
-        [SSViewHelper setViewsHiddenYes:hiddenYesViews];
-        
-        NSArray* hiddenNoViews = @[weakSelf.circlesteelkg,weakSelf.circlesteelkglabel];
-        [SSViewHelper setViewsHiddenNO:hiddenNoViews];
-        
-        NSArray* textFields = @[weakSelf.circlesteel,weakSelf.circlesteelloss,weakSelf.circlesteelm,weakSelf.circlesteelpcs];
-        [SSViewHelper clearTextField: textFields];
-        
-        [weakSelf.c1 setOriginX:CanvasX(228)];
-    };
-    
-    
-    
-    // ----------
-    cStyleSteelSpecTx.didSelectTextInTableAction = ^void(SpecificationTableTextField* tx) {
-        [weakSelf autoFillFirstFieldWhenSpecificationTableTextFieldSelected: tx];
-        
-        NSArray* hiddenYesViews = @[weakSelf.csteelh,weakSelf.csteelb,weakSelf.csteelc,weakSelf.csteelthick,weakSelf.csteelclabel,weakSelf.csteelthicklabel,weakSelf.csteelblabel,weakSelf.x2,weakSelf.x1,weakSelf.x3];
-        [SSViewHelper setViewsHiddenYes:hiddenYesViews];
-        
-        NSArray* hiddenNoViews = @[weakSelf.csteelkglabel,weakSelf.csteelkg];
-        [SSViewHelper setViewsHiddenNO:hiddenNoViews];
-        
-        NSArray* textFields = @[weakSelf.csteelm,weakSelf.csteelpcs,weakSelf.csteelloss,weakSelf.csteel];
-        [SSViewHelper clearTextField: textFields];
-        
-        [weakSelf.csteelm setOriginX:CanvasX(221)];
-        [weakSelf.csteelpcs setOriginX:CanvasX(283)];
-        [weakSelf.csteelloss setOriginX:CanvasX(345)];
-        [weakSelf.csteelmlabel setOriginX:CanvasX(226)];
-        [weakSelf.csteelpcslabel setOriginX:CanvasX(295)];
-        [weakSelf.csteellosslabel setOriginX:CanvasX(358)];
-        weakSelf.csteelhlabel.text = @"  (Kg)";
-    };
-    
-    
     
     
     
@@ -462,75 +395,119 @@
     
     
     // -------------
-    zStyleSteelSpecTx.didSelectTextInTableAction = ^void(SpecificationTableTextField* tx) {
-        [weakSelf autoFillFirstFieldWhenSpecificationTableTextFieldSelected: tx];
-        
-        NSArray* hiddenYesViews = @[weakSelf.z1,weakSelf.z2,weakSelf.z3,weakSelf.zsteelh,weakSelf.zsteelb,weakSelf.zsteelc,weakSelf.zsteelthick,weakSelf.zsteelclabel,weakSelf.zsteelblabel,weakSelf.zsteelthicklabel];
-        [SSViewHelper setViewsHiddenYes:hiddenYesViews];
-        
-        NSArray* hiddenNoViews = @[weakSelf.zsteelkg,weakSelf.zsteelkglabel,weakSelf.anglessidekg2label];
-        [SSViewHelper setViewsHiddenNO:hiddenNoViews];
-        
-        NSArray* textFields = @[weakSelf.zsteelm,weakSelf.zsteelloss,weakSelf.zsteelpcs,weakSelf.zsteel];
-        [SSViewHelper clearTextField: textFields];
-        
-        weakSelf.zsteelhlabel.text = @"  (Kg)";
-        
-        [weakSelf.zsteelm setOriginX:CanvasX(223)];
-        [weakSelf.zsteelpcs setOriginX:CanvasX(285)];
-        [weakSelf.zsteelloss setOriginX:CanvasX(347)];
-        [weakSelf.zsteelmlabel setOriginX:CanvasX(228)];
-        [weakSelf.zsteelpcslabel setOriginX:CanvasX(297)];
-        [weakSelf.zsteellosslabel setOriginX:CanvasX(358)];
-    };
+//    zStyleSteelSpecTx.didSelectTextInTableAction = ^void(SpecificationTableTextField* tx) {
+//        [weakSelf autoFillFirstFieldWhenSpecificationTableTextFieldSelected: tx];
+//        
+//        NSArray* hiddenYesViews = @[weakSelf.z1,weakSelf.z2,weakSelf.z3,weakSelf.zsteelh,weakSelf.zsteelb,weakSelf.zsteelc,weakSelf.zsteelthick,weakSelf.zsteelclabel,weakSelf.zsteelblabel,weakSelf.zsteelthicklabel];
+//        [SSViewHelper setViewsHiddenYes:hiddenYesViews];
+//        
+//        NSArray* hiddenNoViews = @[weakSelf.zsteelkg,weakSelf.zsteelkglabel,weakSelf.anglessidekg2label];
+//        [SSViewHelper setViewsHiddenNO:hiddenNoViews];
+//        
+//        NSArray* textFields = @[weakSelf.zsteelm,weakSelf.zsteelloss,weakSelf.zsteelpcs,weakSelf.zsteel];
+//        [SSViewHelper clearTextField: textFields];
+//        
+//        weakSelf.zsteelhlabel.text = @"  (Kg)";
+//        
+//        [weakSelf.zsteelm setOriginX:CanvasX(223)];
+//        [weakSelf.zsteelpcs setOriginX:CanvasX(285)];
+//        [weakSelf.zsteelloss setOriginX:CanvasX(347)];
+//        [weakSelf.zsteelmlabel setOriginX:CanvasX(228)];
+//        [weakSelf.zsteelpcslabel setOriginX:CanvasX(297)];
+//        [weakSelf.zsteellosslabel setOriginX:CanvasX(358)];
+//    };
+    
+    
+// ----------
+//    cStyleSteelSpecTx.didSelectTextInTableAction = ^void(SpecificationTableTextField* tx) {
+//        [weakSelf autoFillFirstFieldWhenSpecificationTableTextFieldSelected: tx];
+//
+//        NSArray* hiddenYesViews = @[weakSelf.csteelh,weakSelf.csteelb,weakSelf.csteelc,weakSelf.csteelthick,weakSelf.csteelclabel,weakSelf.csteelthicklabel,weakSelf.csteelblabel,weakSelf.x2,weakSelf.x1,weakSelf.x3];
+//        [SSViewHelper setViewsHiddenYes:hiddenYesViews];
+//
+//        NSArray* hiddenNoViews = @[weakSelf.csteelkglabel,weakSelf.csteelkg];
+//        [SSViewHelper setViewsHiddenNO:hiddenNoViews];
+//
+//        NSArray* textFields = @[weakSelf.csteelm,weakSelf.csteelpcs,weakSelf.csteelloss,weakSelf.csteel];
+//        [SSViewHelper clearTextField: textFields];
+//
+//        [weakSelf.csteelm setOriginX:CanvasX(221)];
+//        [weakSelf.csteelpcs setOriginX:CanvasX(283)];
+//        [weakSelf.csteelloss setOriginX:CanvasX(345)];
+//        [weakSelf.csteelmlabel setOriginX:CanvasX(226)];
+//        [weakSelf.csteelpcslabel setOriginX:CanvasX(295)];
+//        [weakSelf.csteellosslabel setOriginX:CanvasX(358)];
+//        weakSelf.csteelhlabel.text = @"  (Kg)";
+//    };
+    
+    
+
+// ----------
+//    circleSteelSpecTx.didSelectTextInTableAction = ^void(SpecificationTableTextField* tx) {
+//        [weakSelf autoFillFirstFieldWhenSpecificationTableTextFieldSelected: tx];
+//
+//        NSArray* hiddenYesViews = @[weakSelf.circlesteeldiamter,weakSelf.circlesteeldiamterlabel];
+//        [SSViewHelper setViewsHiddenYes:hiddenYesViews];
+//
+//        NSArray* hiddenNoViews = @[weakSelf.circlesteelkg,weakSelf.circlesteelkglabel];
+//        [SSViewHelper setViewsHiddenNO:hiddenNoViews];
+//
+//        NSArray* textFields = @[weakSelf.circlesteel,weakSelf.circlesteelloss,weakSelf.circlesteelm,weakSelf.circlesteelpcs];
+//        [SSViewHelper clearTextField: textFields];
+//
+//        [weakSelf.c1 setOriginX:CanvasX(228)];
+//    };
+
+
+
     
     
     // -------------
-    equalAngleSteelSpecTx.didSelectTextInTableAction = ^void(SpecificationTableTextField* tx) {
-        weakSelf.notEqualAngleSteelSpecTx.enabled = NO;
-        
-        [weakSelf autoFillFirstFieldWhenSpecificationTableTextFieldSelected: tx];
-        
-        NSArray* hiddenYesViews = @[weakSelf.angleside1,weakSelf.angleside2,weakSelf.anglethick,weakSelf.anglesside1label,weakSelf.anglesside2label,weakSelf.anglesthicklabel,weakSelf.a1,weakSelf.a2];
-        [SSViewHelper setViewsHiddenYes:hiddenYesViews];
-        
-        NSArray* hiddenNoViews = @[weakSelf.anglekg,weakSelf.anglessidekglabel,weakSelf.anglessidekg2label];
-        [SSViewHelper setViewsHiddenNO:hiddenNoViews];
-        
-        NSArray* textFields = @[weakSelf.angleloss,weakSelf.angles,weakSelf.anglem,weakSelf.anglepcs];
-        [SSViewHelper clearTextField: textFields];
-        
-        [weakSelf.anglem setOriginX:CanvasX(239)];
-        [weakSelf.anglepcs setOriginX:CanvasX(319)];
-        [weakSelf.angleloss setOriginX:CanvasX(399)];
-        [weakSelf.anglesmlabel setOriginX:CanvasX(243)];
-        [weakSelf.anglespcslabel setOriginX:CanvasX(331)];
-        [weakSelf.angleslosslabel setOriginX:CanvasX(413)];
-    };
+//    equalAngleSteelSpecTx.didSelectTextInTableAction = ^void(SpecificationTableTextField* tx) {
+//        weakSelf.notEqualAngleSteelSpecTx.enabled = NO;
+//        
+//        [weakSelf autoFillFirstFieldWhenSpecificationTableTextFieldSelected: tx];
+//        
+//        NSArray* hiddenYesViews = @[weakSelf.angleside1,weakSelf.angleside2,weakSelf.anglethick,weakSelf.anglesside1label,weakSelf.anglesside2label,weakSelf.anglesthicklabel,weakSelf.a1,weakSelf.a2];
+//        [SSViewHelper setViewsHiddenYes:hiddenYesViews];
+//        
+//        NSArray* hiddenNoViews = @[weakSelf.anglekg,weakSelf.anglessidekglabel,weakSelf.anglessidekg2label];
+//        [SSViewHelper setViewsHiddenNO:hiddenNoViews];
+//        
+//        NSArray* textFields = @[weakSelf.angleloss,weakSelf.angles,weakSelf.anglem,weakSelf.anglepcs];
+//        [SSViewHelper clearTextField: textFields];
+//        
+//        [weakSelf.anglem setOriginX:CanvasX(239)];
+//        [weakSelf.anglepcs setOriginX:CanvasX(319)];
+//        [weakSelf.angleloss setOriginX:CanvasX(399)];
+//        [weakSelf.anglesmlabel setOriginX:CanvasX(243)];
+//        [weakSelf.anglespcslabel setOriginX:CanvasX(331)];
+//        [weakSelf.angleslosslabel setOriginX:CanvasX(413)];
+//    };
     
     
     // -------------
-    notEqualAngleSteelSpecTx.didSelectTextInTableAction = ^void(SpecificationTableTextField* tx) {
-        weakSelf.zStyleSteelSpecTx.enabled = NO;
-        
-        [weakSelf autoFillFirstFieldWhenSpecificationTableTextFieldSelected: tx];
-        
-        NSArray* hiddenYesViews = @[weakSelf.angleside1,weakSelf.angleside2,weakSelf.anglethick,weakSelf.anglesside1label,weakSelf.anglesside2label,weakSelf.anglesthicklabel,weakSelf.a1,weakSelf.a2];
-        [SSViewHelper setViewsHiddenYes:hiddenYesViews];
-        
-        NSArray* hiddenNoViews = @[weakSelf.anglekg,weakSelf.anglessidekglabel,weakSelf.anglessidekg2label];
-        [SSViewHelper setViewsHiddenNO:hiddenNoViews];
-        
-        NSArray* textFields = @[weakSelf.angleloss,weakSelf.angles,weakSelf.anglem,weakSelf.anglepcs];
-        [SSViewHelper clearTextField: textFields];
-        
-        [weakSelf.anglem setOriginX:CanvasX(239)];
-        [weakSelf.anglepcs setOriginX:CanvasX(319)];
-        [weakSelf.angleloss setOriginX:CanvasX(399)];
-        [weakSelf.anglesmlabel setOriginX:CanvasX(243)];
-        [weakSelf.anglespcslabel setOriginX:CanvasX(331)];
-        [weakSelf.angleslosslabel setOriginX:CanvasX(413)];
-    };
+//    notEqualAngleSteelSpecTx.didSelectTextInTableAction = ^void(SpecificationTableTextField* tx) {
+//        weakSelf.zStyleSteelSpecTx.enabled = NO;
+//        
+//        [weakSelf autoFillFirstFieldWhenSpecificationTableTextFieldSelected: tx];
+//        
+//        NSArray* hiddenYesViews = @[weakSelf.angleside1,weakSelf.angleside2,weakSelf.anglethick,weakSelf.anglesside1label,weakSelf.anglesside2label,weakSelf.anglesthicklabel,weakSelf.a1,weakSelf.a2];
+//        [SSViewHelper setViewsHiddenYes:hiddenYesViews];
+//        
+//        NSArray* hiddenNoViews = @[weakSelf.anglekg,weakSelf.anglessidekglabel,weakSelf.anglessidekg2label];
+//        [SSViewHelper setViewsHiddenNO:hiddenNoViews];
+//        
+//        NSArray* textFields = @[weakSelf.angleloss,weakSelf.angles,weakSelf.anglem,weakSelf.anglepcs];
+//        [SSViewHelper clearTextField: textFields];
+//        
+//        [weakSelf.anglem setOriginX:CanvasX(239)];
+//        [weakSelf.anglepcs setOriginX:CanvasX(319)];
+//        [weakSelf.angleloss setOriginX:CanvasX(399)];
+//        [weakSelf.anglesmlabel setOriginX:CanvasX(243)];
+//        [weakSelf.anglespcslabel setOriginX:CanvasX(331)];
+//        [weakSelf.angleslosslabel setOriginX:CanvasX(413)];
+//    };
     
     
 }

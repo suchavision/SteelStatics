@@ -7,6 +7,7 @@
 {
     [super initializeDefaultVariables];
 
+//    self.textFieldShouldChangeBlock;
 }
 
 

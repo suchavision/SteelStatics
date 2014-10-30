@@ -42,6 +42,7 @@
     };
     
     
+    //
     NormalButton* editButton = [[NormalButton alloc] init];
     editButton.frame = CanvasRect(200, 0, 150, 45);
     [editButton setTitle: @"編輯排序" forState:UIControlStateNormal];
@@ -68,10 +69,22 @@
         
     };
     
+    NormalButton* printButton = [[NormalButton alloc] init];
+    printButton.frame = CanvasRect(400, 0, 150, 45);
+    [printButton setTitle: @"列印表單" forState:UIControlStateNormal];
+    [printButton setTitleColor: [UIColor blueColor] forState:UIControlStateNormal];
+    [printButton setTitleColor: [UIColor blackColor] forState:UIControlStateHighlighted];
+    printButton.didClikcButtonAction = ^void(UIButton* button) {
+        [ViewHelper printView: tableView completeHandler:^(UIPrintInteractionController *controller, BOOL completed, NSError *error) {
+            [VIEW showHint: @"列印完成"];
+        }];
+    };
     
+    
+    //
     [toolsView addSubview: expandButton];
     [toolsView addSubview: editButton];
-    
+    [toolsView addSubview: printButton];
 }
 
 -(void)viewDidAppear:(BOOL)animated

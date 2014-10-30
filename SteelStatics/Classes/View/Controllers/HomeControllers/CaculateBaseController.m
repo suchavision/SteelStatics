@@ -49,13 +49,7 @@
             OrderTableViewController* tableViewController = VIEW.tableController;
             [tableViewController.tableView.cellsDataContents addObject: values];
             
-            
-            // Hub tips
-            MBProgressHUD *hud = [MBProgressHUD showHUDAddedTo:self.view animated:YES];
-            hud.mode = MBProgressHUDModeText;
-            hud.labelText = @"已經加入表單";
-            hud.removeFromSuperViewOnHide = YES;
-            [hud hide:YES afterDelay: 0.5];
+            [VIEW showHint: @"已經加入表單"];
         };
         return NO;
     }];

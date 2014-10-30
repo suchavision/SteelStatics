@@ -6,22 +6,30 @@
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
 	<string>A6BDEAF9-58D9-4325-B4E9-758CA15D8C2D</string>
+	<key>IDESourceControlProjectName</key>
+	<string>SteelStatics</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>382CF808FA8CFA837D2AEBBBB6B28956273A1D3B</key>
 		<string>https://github.com/isaacselement/Modules.git</string>
+		<key>CD555B7985852862054D0006D5922F1A9F091791</key>
+		<string>https://github.com/suchavision/SteelStatics.git</string>
 	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>SteelStatics.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>382CF808FA8CFA837D2AEBBBB6B28956273A1D3B</key>
-		<string>Modules</string>
+		<string>../../Modules</string>
+		<key>CD555B7985852862054D0006D5922F1A9F091791</key>
+		<string>..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
-	<string>https://github.com/isaacselement/Modules.git</string>
+	<string>https://github.com/suchavision/SteelStatics.git</string>
 	<key>IDESourceControlProjectVersion</key>
 	<integer>111</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>382CF808FA8CFA837D2AEBBBB6B28956273A1D3B</string>
+	<string>CD555B7985852862054D0006D5922F1A9F091791</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
@@ -31,6 +39,14 @@
 			<string>382CF808FA8CFA837D2AEBBBB6B28956273A1D3B</string>
 			<key>IDESourceControlWCCName</key>
 			<string>Modules</string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>CD555B7985852862054D0006D5922F1A9F091791</string>
+			<key>IDESourceControlWCCName</key>
+			<string>SteelStatics</string>
 		</dict>
 	</array>
 </dict>
