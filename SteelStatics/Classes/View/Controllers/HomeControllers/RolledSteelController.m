@@ -116,6 +116,20 @@
         }
         return NO;
     }];
+    // add order Button
+    [ViewHelper iterateSubView: contentView class:[AddOrderButton class] handler:^BOOL(AddOrderButton *orderButton) {
+        orderButton.didClickButtonAction = ^void(BaseButton* button) {
+            
+            ValueView* valueView = (ValueView*)[ViewHelper getSuperView: button clazz:[ValueView class]];
+            NSMutableDictionary* values = [valueView getDatas];
+            
+            OrderTableViewController* tableViewController = VIEW.tableController;
+            [tableViewController.tableView.cellsDataContents addObject: values];
+            
+            [VIEW showHint: @"已經加入表單"];
+        };
+        return NO;
+    }];
 }
 
 -(void) setPopupTableDataSource: (SpecificationTableTextField*)textField key:(NSString*)key

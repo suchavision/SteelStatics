@@ -1,7 +1,10 @@
-#import "AppInterface.h"
 #import "PaintController.h"
+#import "AppInterface.h"
+#import "TableViewBase.h"
 
 @interface PaintController ()
+
+@property (strong) NSMutableArray* tableDataSource;
 
 @end
 
@@ -60,7 +63,81 @@
 @synthesize boardton;
 @synthesize boardprice;
 
+
+@synthesize paintTableView;
+
 #pragma mark - Override Methods
+
+- (void)viewDidLoad
+{
+    [super viewDidLoad];
+    
+    AppScrollView* scrollView = (AppScrollView*)self.view;
+    UIView* contentView = [scrollView.subviews firstObject];
+    scrollView.contentSize = CGSizeMake(scrollView.bounds.size.width, contentView.bounds.size.height);
+    // Do any additional setup after loading the view.
+    
+    
+    self.tableDataSource = [NSMutableArray array];
+    __weak PaintController* weakInstance = self;
+    
+    // refresh button
+    [ViewHelper iterateSubView:contentView class:[BaseButton class] handler:^BOOL(UIView *view) {
+        BaseButton* refreshButton = (BaseButton*)view;
+        if ([[refreshButton titleForState:UIControlStateNormal] isEqualToString: @"刷新"]) {
+            refreshButton.didClickButtonAction = ^void(BaseButton* button) {
+                [self refreshValueView: button];
+            };
+        }
+        
+        return NO;
+    }];
+    
+    // add order Button
+    [ViewHelper iterateSubView: contentView class:[AddOrderButton class] handler:^BOOL(AddOrderButton *orderButton) {
+        orderButton.didClickButtonAction = ^void(BaseButton* button) {
+            
+            ValueView* valueView = (ValueView*)[ViewHelper getSuperView: button clazz:[ValueView class]];
+            UIImage* croppedImage = [ViewHelper imageFromView: valueView];
+            
+            [weakInstance.tableDataSource addObject:croppedImage];
+            [weakInstance.paintTableView reloadData];
+            
+            
+            [VIEW showHint: @"已經加入表單"];
+        };
+        return NO;
+    }];
+    
+    // table View
+    [ColorHelper setBorder: paintTableView color:[UIColor blackColor]];
+    paintTableView.tableViewBaseNumberOfSectionsAction = ^NSInteger(TableViewBase* tableViewObj){
+        return 1;
+    };
+    paintTableView.tableViewBaseNumberOfRowsInSectionAction = ^NSInteger(TableViewBase* tableViewObj, NSInteger section) {
+        return weakInstance.tableDataSource.count;
+    };
+    paintTableView.tableViewBaseHeightForIndexPathAction = ^CGFloat(TableViewBase* tableViewObj, NSIndexPath* indexPath)
+    {
+        UIImage* image = [weakInstance.tableDataSource objectAtIndex:indexPath.row];
+        return image.size.height;
+    };
+    paintTableView.tableViewBaseCellForIndexPathAction = ^UITableViewCell*(TableViewBase* tableViewObj, NSIndexPath* indexPath, UITableViewCell* oldCell) {
+        int tag = 100033;
+        UIImageView* imageView = (UIImageView*)[oldCell.contentView viewWithTag:tag];
+        if (!imageView) {
+            imageView = [[UIImageView alloc] init];
+            imageView.tag = tag;
+            [oldCell.contentView addSubview: imageView];
+        }
+        UIImage* image = [weakInstance.tableDataSource objectAtIndex: indexPath.row];
+        imageView.image = image;
+        [imageView setSize: image.size];
+        return oldCell;
+    };
+
+
+}
 
 -(void) autoUpdateResuls:(UITextField *)textField
 {
@@ -91,29 +168,6 @@
     }
 }
 
-- (void)viewDidLoad
-{
-    [super viewDidLoad];
-    
-    AppScrollView* scrollView = (AppScrollView*)self.view;
-    UIView* contentView = [scrollView.subviews firstObject];
-    scrollView.contentSize = CGSizeMake(scrollView.bounds.size.width, contentView.bounds.size.height);
-    // Do any additional setup after loading the view.
- 
-    
-    
-    
-    [ViewHelper iterateSubView:contentView class:[BaseButton class] handler:^BOOL(UIView *view) {
-        BaseButton* refreshButton = (BaseButton*)view;
-        if ([[refreshButton titleForState:UIControlStateNormal] isEqualToString: @"刷新"]) {
-            refreshButton.didClickButtonAction = ^void(BaseButton* button) {
-                [self refreshValueView: button];
-            };
-        }
-        
-        return NO;
-    }];
-}
 
 - (IBAction) refreshValueView:(UIButton*)sender
 {

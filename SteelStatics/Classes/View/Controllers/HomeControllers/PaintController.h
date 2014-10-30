@@ -1,5 +1,6 @@
 #import "CaculateBaseController.h"
 
+@class TableViewBase;
 @class BaseTextField;
 @class NumberTextField;
 @class CaculateTextField;
@@ -58,5 +59,7 @@
 @property (weak, nonatomic) IBOutlet NumberTextField *boardneedkg;
 @property (weak, nonatomic) IBOutlet NumberTextField *boardton;
 @property (weak, nonatomic) IBOutlet NumberTextField *boardprice;
+
+@property (weak, nonatomic) IBOutlet TableViewBase *paintTableView;
 
 @end
