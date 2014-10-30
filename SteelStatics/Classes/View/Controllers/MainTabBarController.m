@@ -26,7 +26,7 @@
     [super viewDidLoad];
     
     CGFloat space = 1;
-    int buttonCount = 5;
+    int buttonCount = (int)self.viewControllers.count;
     CGFloat width = [RectHelper getScreenSizeByControllerOrientation].width;
     
     customTabsView = [[UIView alloc] init];
@@ -40,16 +40,16 @@
         if (i == 0) {
             title = @"表面未處理鋼材計算";
         }
+//        if (i == 1) {
+//            title = @"表面已處理鋼材計算";
+//        }
         if (i == 1) {
-            title = @"表面已處理鋼材計算";
-        }
-        if (i == 2) {
             title = @"其它";
         }
-        if (i == 3) {
+        if (i == 2) {
             title = @"報價單";
         }
-        if (i == 4) {
+        if (i == 3) {
             title = @"油漆計算";
         }
         //rect

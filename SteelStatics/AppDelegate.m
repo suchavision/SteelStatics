@@ -40,13 +40,13 @@
     
     // load all the view
     for (int i = 0; i < tabController.viewControllers.count; i++) {
-        if (i == 1) {
-            NavigationController* navController = (NavigationController*)[tabController.viewControllers objectAtIndex: i];
-            if (navController.viewControllers.count == 0) {
-                UIViewController* controller = [storyboard instantiateViewControllerWithIdentifier: @"RolledSteelController"];
-                [navController pushViewController: controller animated:YES];
-            }
-        }
+//        if (i == 1) {
+//            NavigationController* navController = (NavigationController*)[tabController.viewControllers objectAtIndex: i];
+//            if (navController.viewControllers.count == 0) {
+//                UIViewController* controller = [storyboard instantiateViewControllerWithIdentifier: @"RolledSteelController"];
+//                [navController pushViewController: controller animated:YES];
+//            }
+//        }
         [tabController setSelectedIndex: i];
     }
     [tabController setSelectedIndex: 0];
