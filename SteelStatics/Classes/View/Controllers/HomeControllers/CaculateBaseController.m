@@ -29,7 +29,6 @@
         textField.textFieldDidSetTextBlock = ^void(NormalTextField* textField, NSString* oldText){
             [self doAutoUpdateResult: textField originText:oldText];
         };
-        
         textField.textFieldDidEndEditingBlock = ^void(NormalTextField* textField, NSString* oldText){
             [self doAutoUpdateResult: textField originText:oldText];
         };

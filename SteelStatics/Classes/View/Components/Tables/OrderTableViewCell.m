@@ -27,13 +27,26 @@
         
         [self createTextAndAddToContentView:CanvasRect(494, 0, 50, 50) key: kResult_Unit enable:YES].tag = Table_Column_Tag(4);
         
-        BaseTextField* caculateResultTextField = [self createTextAndAddToContentView:CanvasRect(544, 0, 70, 50) key: kCaculate_Result enable:YES];
-        caculateResultTextField.tag = Table_Column_Tag(5);
-        caculateResultTextField.keyboardType = UIKeyboardTypeDecimalPad;
         
-        BaseTextField* tx = [self createTextAndAddToContentView:CanvasRect(614, 0, 70, 50) key:kUnit_Price  enable:YES];
-        tx.tag = Table_Column_Tag(6);
-        tx.keyboardType = UIKeyboardTypeDecimalPad;
+        
+        CaculateTextField* caculateResultTextField = [[CaculateTextField alloc] initWithFrame:CanvasRect(544, 0, 70, 50)];
+        caculateResultTextField.attributeKey = kCaculate_Result;
+        caculateResultTextField.tag = Table_Column_Tag(5);
+        caculateResultTextField.layer.borderWidth = 0.5;
+        caculateResultTextField.textAlignment = NSTextAlignmentCenter;
+        caculateResultTextField.borderStyle = UITextBorderStyleNone;
+        caculateResultTextField.keyboardType = UIKeyboardTypeDecimalPad;
+        [self.contentView addSubview: caculateResultTextField];
+        
+        CaculateTextField* unitPriceTextField = [[CaculateTextField alloc] initWithFrame:CanvasRect(614, 0, 70, 50)];
+        unitPriceTextField.attributeKey = kUnit_Price;
+        unitPriceTextField.tag = Table_Column_Tag(6);
+        unitPriceTextField.layer.borderWidth = 0.5;
+        unitPriceTextField.textAlignment = NSTextAlignmentCenter;
+        unitPriceTextField.borderStyle = UITextBorderStyleNone;
+        unitPriceTextField.keyboardType = UIKeyboardTypeDecimalPad;
+        [self.contentView addSubview: unitPriceTextField];
+        
         
         [self createTextAndAddToContentView:CanvasRect(684, 0, 80, 50) key: kTotal enable:NO].tag = Table_Column_Tag(7);
         
@@ -51,17 +64,6 @@
             textField.textFieldEditingChangedBlock = ^void(NormalTextField* textField) {
                 [self updateTableViewDatasources: (BaseTextField*)textField originText:nil];
             };
-            
-            
-            // for kUnit_Price & kCaculate_Result , return .
-            NSString* key = textField.attributeKey;
-            if (!([key isEqualToString:kUnit_Price] || [key isEqualToString: kCaculate_Result])) {
-                return NO;
-            }
-            textField.textFieldShouldChangeBlock = ^BOOL(NormalTextField* textField, NSRange range, NSString* replaceString) {
-                return [SSViewHelper checkIsNumericWithAlert: replaceString];
-            };
-            
             return NO;
         }];
     }

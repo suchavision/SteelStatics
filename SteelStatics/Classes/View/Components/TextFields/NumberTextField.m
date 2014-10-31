@@ -8,6 +8,16 @@
 {
     [super initializeDefaultVariables];
     self.keyboardType = UIKeyboardTypeDecimalPad;
+    
+    
+    self.textFieldShouldChangeBlock = ^BOOL(NormalTextField* textField, NSRange range, NSString* replaceString) {
+        if (range.location == 0) {
+            if ([replaceString isEqualToString:@"0" ]) {
+                return NO;
+            }
+        }
+        return [SSViewHelper checkIsNumericWithAlert: replaceString];
+    };
 }
 
 

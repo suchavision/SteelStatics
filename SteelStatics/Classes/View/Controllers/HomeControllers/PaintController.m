@@ -120,13 +120,13 @@
     paintTableView.tableViewBaseHeightForIndexPathAction = ^CGFloat(TableViewBase* tableViewObj, NSIndexPath* indexPath)
     {
         UIImage* image = [weakInstance.tableDataSource objectAtIndex:indexPath.row];
-        return image.size.height;
+        return image.size.height + CanvasH(20);
     };
     paintTableView.tableViewBaseCellForIndexPathAction = ^UITableViewCell*(TableViewBase* tableViewObj, NSIndexPath* indexPath, UITableViewCell* oldCell) {
         int tag = 100033;
         UIImageView* imageView = (UIImageView*)[oldCell.contentView viewWithTag:tag];
         if (!imageView) {
-            imageView = [[UIImageView alloc] init];
+            imageView = [[UIImageView alloc] initWithFrame:CanvasRect(0, 10, 0, 0)];
             imageView.tag = tag;
             [oldCell.contentView addSubview: imageView];
         }

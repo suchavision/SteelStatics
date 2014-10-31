@@ -3,12 +3,10 @@
 @implementation CaculateTextField
 
 
--(void) initializeDefaultVariables
-{
-    [super initializeDefaultVariables];
-
-//    self.textFieldShouldChangeBlock;
-}
+//-(void) initializeDefaultVariables
+//{
+//    [super initializeDefaultVariables];
+//}
 
 
 
