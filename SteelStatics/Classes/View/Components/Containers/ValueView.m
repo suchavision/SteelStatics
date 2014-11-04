@@ -22,14 +22,14 @@
         }
         
         // hard code now
-        [datas setObject: @"Kg" forKey:kResult_Unit];
+        [datas setObject: @"Kg" forKey:kColumn_Unit];
         
         return NO;
     }];
     
     ValueCaculateView* caView = (ValueCaculateView*)[ViewHelper getSubview:self clazz:[ValueCaculateView class]];
     UIImage* croppedImage = [ViewHelper imageFromView: caView];
-    [datas setObject:croppedImage forKey: kFormula_Image];
+    [datas setObject:croppedImage forKey: kColumn_Formula_Image];
     
     NSLog(@"--- %@" , datas);
     

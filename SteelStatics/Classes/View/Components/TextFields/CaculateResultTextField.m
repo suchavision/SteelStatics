@@ -10,7 +10,7 @@
     
     self.enabled = NO;
     
-    self.attributeKey = kCaculate_Result;
+    self.attributeKey = kColumn_Caculate_Quantity;
 }
 
 @end

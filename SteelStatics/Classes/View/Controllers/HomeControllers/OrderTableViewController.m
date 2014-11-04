@@ -21,7 +21,7 @@
     [GestureHelper addGestureToView: self.view];
     
     //
-    tableView = [[OrderTableView alloc] initWithFrame: CanvasRect(4, 100, 760, 900)];
+    tableView = [[OrderTableView alloc] initWithFrame: CanvasRect(4, 100, 768, 920)];
     [ColorHelper setBorder: tableView color:[UIColor blackColor]];
     [self.view addSubview: tableView];
     

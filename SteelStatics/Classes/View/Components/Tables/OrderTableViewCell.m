@@ -19,18 +19,18 @@
         [self createTextAndAddToContentView:CanvasRect(229, 0, 175, 50) key: kMaterial_Specifications enable:YES].tag = Table_Column_Tag(2);
         
         FormulaImageView* formulaImageView = [[FormulaImageView alloc]initWithFrame: CanvasRect(404, 0, 90, 50)];
-        formulaImageView.attributeKey = kFormula_Image;
+        formulaImageView.attributeKey = kColumn_Formula_Image;
         formulaImageView.layer.borderWidth = 0.5;
         [self.contentView addSubview:formulaImageView];
         formulaImageView.tag = Table_Column_Tag(3);
         formulaImageView.contentMode = UIViewContentModeScaleAspectFit;
         
-        [self createTextAndAddToContentView:CanvasRect(494, 0, 50, 50) key: kResult_Unit enable:YES].tag = Table_Column_Tag(4);
+        [self createTextAndAddToContentView:CanvasRect(494, 0, 50, 50) key: kColumn_Unit enable:YES].tag = Table_Column_Tag(4);
         
         
         
         CaculateTextField* caculateResultTextField = [[CaculateTextField alloc] initWithFrame:CanvasRect(544, 0, 70, 50)];
-        caculateResultTextField.attributeKey = kCaculate_Result;
+        caculateResultTextField.attributeKey = kColumn_Caculate_Quantity;
         caculateResultTextField.tag = Table_Column_Tag(5);
         caculateResultTextField.layer.borderWidth = 0.5;
         caculateResultTextField.textAlignment = NSTextAlignmentCenter;
@@ -39,7 +39,7 @@
         [self.contentView addSubview: caculateResultTextField];
         
         CaculateTextField* unitPriceTextField = [[CaculateTextField alloc] initWithFrame:CanvasRect(614, 0, 70, 50)];
-        unitPriceTextField.attributeKey = kUnit_Price;
+        unitPriceTextField.attributeKey = kColumn_Unit_Price;
         unitPriceTextField.tag = Table_Column_Tag(6);
         unitPriceTextField.layer.borderWidth = 0.5;
         unitPriceTextField.textAlignment = NSTextAlignmentCenter;
@@ -48,7 +48,7 @@
         [self.contentView addSubview: unitPriceTextField];
         
         
-        [self createTextAndAddToContentView:CanvasRect(684, 0, 80, 50) key: kTotal enable:NO].tag = Table_Column_Tag(7);
+        [self createTextAndAddToContentView:CanvasRect(684, 0, 80, 50) key: kColumn_Total_Price enable:NO].tag = Table_Column_Tag(7);
         
         
         
@@ -132,9 +132,9 @@
     if ([newText isEqualToString: originText]) return;
     
     
-    // for kUnit_Price & kCaculate_Result, not number , return .
+    // for kColumn_Unit_Price & kColumn_Caculate_Quantity, not number , return .
     NSString* key = textField.attributeKey;
-    if ([key isEqualToString:kUnit_Price] || [key isEqualToString: kCaculate_Result]) {
+    if ([key isEqualToString:kColumn_Unit_Price] || [key isEqualToString: kColumn_Caculate_Quantity]) {
         if (![SSViewHelper checkIsNumericWithAlert: newText]) {
             textField.text = nil;
             return;
@@ -154,14 +154,14 @@
     
     
     
-    // for kUnit_Price & kCaculate_Result,  update the caculate results
-    if (!isEmptyString(values[kCaculate_Result]) && !isEmptyString(values[kUnit_Price])) {
-        float quantityPrice = [values[kCaculate_Result] floatValue];
-        float unitPrice = [values[kUnit_Price] floatValue];
+    // for kColumn_Unit_Price & kColumn_Caculate_Quantity,  update the caculate results
+    if (!isEmptyString(values[kColumn_Caculate_Quantity]) && !isEmptyString(values[kColumn_Unit_Price])) {
+        float quantityPrice = [values[kColumn_Caculate_Quantity] floatValue];
+        float unitPrice = [values[kColumn_Unit_Price] floatValue];
         
         float total = unitPrice * quantityPrice;
         NSString* totalString = [NSString stringWithFormat:@"%.0f", total];
-        [values setObject: totalString forKey: kTotal];
+        [values setObject: totalString forKey: kColumn_Total_Price];
     }
     
     [cellsDataContents replaceObjectAtIndex: indexPath.row withObject:values];
