@@ -9,12 +9,7 @@
 
 
 @synthesize cellsDataContents;
-
-
 @synthesize sectionZeroView;
-
-
-@synthesize moveSequencesRows;
 
 
 -(void)awakeFromNib
@@ -44,8 +39,6 @@
     
     self.tableHeaderView = [self setupTableHeaderView];
     self.tableFooterView = [self setupTableFooterView];
-    
-    moveSequencesRows = [NSMutableArray array];
 }
 
 -(UIView*) setupTableHeaderView
@@ -185,36 +178,31 @@
     }];
 }
 
-
-
 -(void) updateCellValuesAtRow: (NSUInteger)row cell:(OrderTableViewCell*)cell
 {
-    NSDictionary* rowContents = [cellsDataContents objectAtIndex: row];
-    [cell setValues: rowContents];
+    NSMutableDictionary* contents = [cellsDataContents objectAtIndex: row];
+    
+    NSString* identifcation = contents[kColumn_Id];
+    
+    // the special caculate the total .......
+    if ([identifcation isEqualToString: kRow_SteelFrameCreate] || [identifcation isEqualToString:kRow_Total]) {
+        float total = 0;
+        for (int i = 0; i < row; i++) {
+            NSDictionary* values = [cellsDataContents objectAtIndex:i];
+            NSString* quantityStr = values[kColumn_Caculate_Quantity];
+            float quantity = [quantityStr floatValue];
+            total += quantity;
+        }
+        NSString* totalStr = [@(total) stringValue];
+        [contents setObject: totalStr forKey:kColumn_Caculate_Quantity];
+        
+        [OrderTableViewCell caculateCellTheTotalValue: contents];
+    }
+    
+    // ... 
+    [cell setValues: contents];
     [cell setIndex: row];
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -276,7 +264,13 @@
 - (void)tableView:(UITableView *)tableView moveRowAtIndexPath:(NSIndexPath *)sourceIndexPath toIndexPath:(NSIndexPath *)destinationIndexPath
 {
     NSLog(@"%ld -> %ld", sourceIndexPath.row, destinationIndexPath.row);
-    [moveSequencesRows addObject:@[@(sourceIndexPath.row), @(destinationIndexPath.row)]];
+    
+    NSUInteger from = sourceIndexPath.row;
+    id value = [cellsDataContents objectAtIndex: from];
+    [cellsDataContents removeObjectAtIndex: from];
+    
+    NSUInteger to = destinationIndexPath.row;
+    [cellsDataContents insertObject: value atIndex:to];
 }
 // ----------------------- Move End -----------------------
 
@@ -292,7 +286,7 @@
 
 - (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    [self endEditing:YES];
+    [tableView endEditing:YES];
     if (editingStyle == UITableViewCellEditingStyleDelete) {
         // Delete the row from the data source
         [cellsDataContents removeObjectAtIndex: indexPath.row];

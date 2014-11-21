@@ -12,6 +12,8 @@
 
 @property (strong) UIView* sectionZeroView;
 
+@property (strong) NSMutableArray* sectionZeroContents;
+
 
 
 @end

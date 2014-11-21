@@ -79,6 +79,8 @@
 		4EDB4C6319E4DE8800B66D56 /* NumberTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EDB4C5319E4DE8800B66D56 /* NumberTextField.m */; };
 		4EDC8B7219E7B244003B7DE0 /* BaseImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EDC8B7119E7B244003B7DE0 /* BaseImageView.m */; };
 		4EDC8B7519E7B54E003B7DE0 /* FormulaImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EDC8B7419E7B54E003B7DE0 /* FormulaImageView.m */; };
+		4EDE1EC91A1C638000865CE5 /* AudioHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EDE1EC61A1C638000865CE5 /* AudioHandler.m */; };
+		4EDE1ECA1A1C638000865CE5 /* MXAudioPlayerFadeOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EDE1EC81A1C638000865CE5 /* MXAudioPlayerFadeOperation.m */; };
 		4EE55C7419751FB20078428D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4EE55C7319751FB20078428D /* Foundation.framework */; };
 		4EE55C7619751FB20078428D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4EE55C7519751FB20078428D /* CoreGraphics.framework */; };
 		4EE55C7819751FB20078428D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4EE55C7719751FB20078428D /* UIKit.framework */; };
@@ -91,13 +93,14 @@
 		4EE55C9719751FB20078428D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4EE55C7319751FB20078428D /* Foundation.framework */; };
 		4EE55C9819751FB20078428D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4EE55C7719751FB20078428D /* UIKit.framework */; };
 		4EECCAAF1A087621003DECD1 /* OtherTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EECCAAE1A087621003DECD1 /* OtherTableViewCell.m */; };
+		4EECCAB41A08C3F1003DECD1 /* otherTableViewDataSources.json in Resources */ = {isa = PBXBuildFile; fileRef = 4EECCAB31A08C3F1003DECD1 /* otherTableViewDataSources.json */; };
 		4EF4D2F219D40DDA00299F72 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 4EF4D2F119D40DDA00299F72 /* README.md */; };
 		4EF753391A0715E4005D22CB /* ActionAnimateHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EF752CD1A0715E4005D22CB /* ActionAnimateHelper.m */; };
 		4EF7533A1A0715E4005D22CB /* ActionExecutorBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EF752CF1A0715E4005D22CB /* ActionExecutorBase.m */; };
 		4EF7533B1A0715E4005D22CB /* ActionExecutorManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EF752D11A0715E4005D22CB /* ActionExecutorManager.m */; };
 		4EF7533C1A0715E4005D22CB /* ImageAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EF752D41A0715E4005D22CB /* ImageAnimator.m */; };
 		4EF7533D1A0715E4005D22CB /* TextFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EF752D61A0715E4005D22CB /* TextFormatter.m */; };
-		4EF7533E1A0715E4005D22CB /* AudioPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EF752D91A0715E4005D22CB /* AudioPlayer.m */; };
+		4EF7533E1A0715E4005D22CB /* AudiosExecutor.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EF752D91A0715E4005D22CB /* AudiosExecutor.m */; };
 		4EF7533F1A0715E4005D22CB /* ElementsExecutor.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EF752DB1A0715E4005D22CB /* ElementsExecutor.m */; };
 		4EF753401A0715E4005D22CB /* ExplodesExecutor.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EF752DD1A0715E4005D22CB /* ExplodesExecutor.m */; };
 		4EF753411A0715E4005D22CB /* InvocationExecutor.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EF752DF1A0715E4005D22CB /* InvocationExecutor.m */; };
@@ -318,6 +321,10 @@
 		4EDC8B7119E7B244003B7DE0 /* BaseImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseImageView.m; sourceTree = "<group>"; };
 		4EDC8B7319E7B54E003B7DE0 /* FormulaImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FormulaImageView.h; sourceTree = "<group>"; };
 		4EDC8B7419E7B54E003B7DE0 /* FormulaImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FormulaImageView.m; sourceTree = "<group>"; };
+		4EDE1EC51A1C638000865CE5 /* AudioHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudioHandler.h; sourceTree = "<group>"; };
+		4EDE1EC61A1C638000865CE5 /* AudioHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AudioHandler.m; sourceTree = "<group>"; };
+		4EDE1EC71A1C638000865CE5 /* MXAudioPlayerFadeOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MXAudioPlayerFadeOperation.h; sourceTree = "<group>"; };
+		4EDE1EC81A1C638000865CE5 /* MXAudioPlayerFadeOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MXAudioPlayerFadeOperation.m; sourceTree = "<group>"; };
 		4EE55C7019751FB20078428D /* SteelStatics.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SteelStatics.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4EE55C7319751FB20078428D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		4EE55C7519751FB20078428D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -336,6 +343,7 @@
 		4EECCAAD1A087621003DECD1 /* OtherTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OtherTableViewCell.h; sourceTree = "<group>"; };
 		4EECCAAE1A087621003DECD1 /* OtherTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OtherTableViewCell.m; sourceTree = "<group>"; };
 		4EECCAB01A087E17003DECD1 /* AppConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppConfig.h; sourceTree = "<group>"; };
+		4EECCAB31A08C3F1003DECD1 /* otherTableViewDataSources.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = otherTableViewDataSources.json; sourceTree = "<group>"; };
 		4EF4D2F119D40DDA00299F72 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = SOURCE_ROOT; };
 		4EF752C81A0715E4005D22CB /* _View.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _View.h; sourceTree = "<group>"; };
 		4EF752CA1A0715E4005D22CB /* _ActionExecutor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _ActionExecutor.h; sourceTree = "<group>"; };
@@ -350,8 +358,8 @@
 		4EF752D41A0715E4005D22CB /* ImageAnimator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageAnimator.m; sourceTree = "<group>"; };
 		4EF752D51A0715E4005D22CB /* TextFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TextFormatter.h; sourceTree = "<group>"; };
 		4EF752D61A0715E4005D22CB /* TextFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TextFormatter.m; sourceTree = "<group>"; };
-		4EF752D81A0715E4005D22CB /* AudioPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudioPlayer.h; sourceTree = "<group>"; };
-		4EF752D91A0715E4005D22CB /* AudioPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AudioPlayer.m; sourceTree = "<group>"; };
+		4EF752D81A0715E4005D22CB /* AudiosExecutor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudiosExecutor.h; sourceTree = "<group>"; };
+		4EF752D91A0715E4005D22CB /* AudiosExecutor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AudiosExecutor.m; sourceTree = "<group>"; };
 		4EF752DA1A0715E4005D22CB /* ElementsExecutor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ElementsExecutor.h; sourceTree = "<group>"; };
 		4EF752DB1A0715E4005D22CB /* ElementsExecutor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ElementsExecutor.m; sourceTree = "<group>"; };
 		4EF752DC1A0715E4005D22CB /* ExplodesExecutor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExplodesExecutor.h; sourceTree = "<group>"; };
@@ -670,6 +678,7 @@
 			isa = PBXGroup;
 			children = (
 				4ED72B4019F623FF0089B5E3 /* specifications.json */,
+				4EECCAB31A08C3F1003DECD1 /* otherTableViewDataSources.json */,
 			);
 			path = Json;
 			sourceTree = "<group>";
@@ -914,6 +923,10 @@
 		4EF752D21A0715E4005D22CB /* Element */ = {
 			isa = PBXGroup;
 			children = (
+				4EDE1EC51A1C638000865CE5 /* AudioHandler.h */,
+				4EDE1EC61A1C638000865CE5 /* AudioHandler.m */,
+				4EDE1EC71A1C638000865CE5 /* MXAudioPlayerFadeOperation.h */,
+				4EDE1EC81A1C638000865CE5 /* MXAudioPlayerFadeOperation.m */,
 				4EF752D31A0715E4005D22CB /* ImageAnimator.h */,
 				4EF752D41A0715E4005D22CB /* ImageAnimator.m */,
 				4EF752D51A0715E4005D22CB /* TextFormatter.h */,
@@ -925,8 +938,8 @@
 		4EF752D71A0715E4005D22CB /* Queue */ = {
 			isa = PBXGroup;
 			children = (
-				4EF752D81A0715E4005D22CB /* AudioPlayer.h */,
-				4EF752D91A0715E4005D22CB /* AudioPlayer.m */,
+				4EF752D81A0715E4005D22CB /* AudiosExecutor.h */,
+				4EF752D91A0715E4005D22CB /* AudiosExecutor.m */,
 				4EF752DA1A0715E4005D22CB /* ElementsExecutor.h */,
 				4EF752DB1A0715E4005D22CB /* ElementsExecutor.m */,
 				4EF752DC1A0715E4005D22CB /* ExplodesExecutor.h */,
@@ -1448,6 +1461,7 @@
 				4ED72BBE19F63DC20089B5E3 /* H型鋼截面.png in Resources */,
 				4E9BA70619F661BF003D89D5 /* 變截面H型鋼.png in Resources */,
 				4ED72BC519F63DC20089B5E3 /* 矩形管.png in Resources */,
+				4EECCAB41A08C3F1003DECD1 /* otherTableViewDataSources.json in Resources */,
 				4EFFE4DC19F25C0B00418C45 /* public_key.der in Resources */,
 				4ED72BAC19F63DC20089B5E3 /* AccountInformation-Details_09@2x.png in Resources */,
 				4ED72BB719F63DC20089B5E3 /* icon.png in Resources */,
@@ -1510,6 +1524,7 @@
 				4EF7535E1A0715E4005D22CB /* RotatableScorllViewController.m in Sources */,
 				4EC45D5B1A01B2FE00A45043 /* StringHelper.m in Sources */,
 				4EDC8B7219E7B244003B7DE0 /* BaseImageView.m in Sources */,
+				4EDE1EC91A1C638000865CE5 /* AudioHandler.m in Sources */,
 				4EFFE4F419F25C0B00418C45 /* LocalizeHelper.m in Sources */,
 				4EDB4C6119E4DE8800B66D56 /* ProjectNameTextField.m in Sources */,
 				4EC45D571A01B2FE00A45043 /* NSMutableArray+Additions.m in Sources */,
@@ -1529,7 +1544,7 @@
 				4EFFE4E519F25C0B00418C45 /* RSACryptor.m in Sources */,
 				4EF753431A0715E4005D22CB /* QueueExecutorBase.m in Sources */,
 				BA99E3DE199C92F3005FE1D3 /* GestureHelper.m in Sources */,
-				4EF7533E1A0715E4005D22CB /* AudioPlayer.m in Sources */,
+				4EF7533E1A0715E4005D22CB /* AudiosExecutor.m in Sources */,
 				4EC45D691A01B2FE00A45043 /* TableViewHelper.m in Sources */,
 				4EF753621A0715E4005D22CB /* FrameTranslater.m in Sources */,
 				4EECCAAF1A087621003DECD1 /* OtherTableViewCell.m in Sources */,
@@ -1585,6 +1600,7 @@
 				4EF753631A0715E4005D22CB /* UIView+Frame.m in Sources */,
 				4EF753611A0715E4005D22CB /* FrameHelper.m in Sources */,
 				4EDB4C5419E4DE8800B66D56 /* AddOrderButton.m in Sources */,
+				4EDE1ECA1A1C638000865CE5 /* MXAudioPlayerFadeOperation.m in Sources */,
 				4EF753491A0715E4005D22CB /* QueueViewsHelper.m in Sources */,
 				4EC45D621A01B2FE00A45043 /* ColorHelper.m in Sources */,
 				4EFFE4D519F25C0B00418C45 /* ScheduledTask.m in Sources */,

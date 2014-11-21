@@ -26,12 +26,8 @@
     [self.view addSubview: tableView];
     
     //
-    UIView* toolsView = [[UIView alloc] initWithFrame:CanvasRect(0, 48, 768, 50)];
-    [ColorHelper setBorder: toolsView color:[UIColor grayColor]];
-    [self.view addSubview: toolsView];
-    
     NormalButton* expandButton = [[NormalButton alloc] init];
-    expandButton.frame = CanvasRect(0, 0, 150, 45);
+    expandButton.frame = CanvasRect(100, 0, 150, 45);
     [expandButton setTitle: @"顯示公式" forState:UIControlStateNormal];
     [expandButton setTitle: @"隱藏公式" forState:UIControlStateSelected];
     [expandButton setTitleColor: [UIColor blueColor] forState:UIControlStateNormal];
@@ -44,7 +40,7 @@
     
     //
     NormalButton* editButton = [[NormalButton alloc] init];
-    editButton.frame = CanvasRect(200, 0, 150, 45);
+    editButton.frame = CanvasRect(300, 0, 150, 45);
     [editButton setTitle: @"編輯排序" forState:UIControlStateNormal];
     [editButton setTitle: @"完成編輯" forState:UIControlStateSelected];
     [editButton setTitleColor: [UIColor blueColor] forState:UIControlStateNormal];
@@ -54,34 +50,27 @@
         
         BOOL isSelected = button.selected;
         [weakInstance.tableView setEditing: isSelected animated:YES];
-        if (isSelected) {
-            [weakInstance.tableView.moveSequencesRows removeAllObjects];
-        } else {
-            NSArray* array = weakInstance.tableView.moveSequencesRows;
-            for (int i = 0; i < array.count; i++) {
-                NSArray* fromTo = array[i];
-                int from = [[fromTo firstObject] intValue];
-                int to = [[fromTo lastObject] intValue];
-                [weakInstance.tableView.cellsDataContents exchangeObjectAtIndex: from withObjectAtIndex:to];
-            }
-            [weakInstance.tableView reloadData];
+        if (!isSelected) {
+            [weakInstance.tableView performSelector:@selector(reloadData) withObject:nil afterDelay:0.5];
         }
         
     };
     
     NormalButton* printButton = [[NormalButton alloc] init];
-    printButton.frame = CanvasRect(400, 0, 150, 45);
+    printButton.frame = CanvasRect(500, 0, 150, 45);
     [printButton setTitle: @"列印表單" forState:UIControlStateNormal];
     [printButton setTitleColor: [UIColor blueColor] forState:UIControlStateNormal];
     [printButton setTitleColor: [UIColor blackColor] forState:UIControlStateHighlighted];
     printButton.didClikcButtonAction = ^void(UIButton* button) {
         [ViewHelper printView: tableView completeHandler:^(UIPrintInteractionController *controller, BOOL completed, NSError *error) {
-            [VIEW showHint: @"列印完成"];
+            [VIEW showHint: @"已經加列印機隊列"];
         }];
     };
     
     
     //
+    UIView* toolsView = [[UIView alloc] initWithFrame:CanvasRect(0, 48, 768, 50)];
+    [self.view addSubview: toolsView];
     [toolsView addSubview: expandButton];
     [toolsView addSubview: editButton];
     [toolsView addSubview: printButton];

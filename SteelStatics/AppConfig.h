@@ -8,6 +8,9 @@
 #define kMaterial_Specifications    @"kMaterial_Specifications"
 
 
+#define kColumn_Id                  @"id"
+
+
 #define kColumn_Number                  @"kColumn_Number"
 
 #define kColumn_Formula_Image           @"kColumn_Formula_Image"
@@ -25,5 +28,18 @@
 #define kColumn_Action             @"kColumn_Action"
 
 
+
+
+
+
+
+
+
+
+
+
+#define kRow_SteelFrameCreate       @"SteelFrameCreate"
+
+#define kRow_Total                  @"Total"
 
 

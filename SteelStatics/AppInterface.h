@@ -5,6 +5,10 @@
 
 #import "_Helper.h"
 
+#import "_Data.h"
+
+#import "AppConfig.h"
+
 
 
 // 3rd Party Libraries
@@ -18,7 +22,7 @@
 
 #import "AppDelegate.h"
 
-#pragma mark - View 
+#pragma mark - View
 
 #import "ViewManager.h"
 
@@ -33,7 +37,6 @@
 
 #import "CircleMoreController.h"
 
-#import "AppConfig.h"
 
 
 
@@ -47,6 +50,8 @@
 #import "BaseController.h"
 
 #import "OrderTableViewController.h"
+
+#import "OtherController.h"
 
 #import "NavigationController.h"
 

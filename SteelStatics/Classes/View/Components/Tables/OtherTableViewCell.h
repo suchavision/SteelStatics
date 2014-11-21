@@ -3,14 +3,21 @@
 @interface OtherTableViewCell : UITableViewCell
 
 
+@property (strong, readonly) NSString* identifcation;
+
+
 @property (assign, readonly) BOOL isInitialize;
 
 
 -(void) initialize: (NSDictionary*)dictionary;
 
--(void) setContents: (NSDictionary*)contents;
 
 -(NSMutableDictionary*) getContents;
+
+-(void) setContents:(NSMutableDictionary *)contents;
+
+
+
 
 
 @end

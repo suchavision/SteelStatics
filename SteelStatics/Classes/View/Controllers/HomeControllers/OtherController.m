@@ -7,6 +7,7 @@ static NSString*  otherTableViewCellReuseIdentifier = @"otherTableViewCellReuseI
 
 @interface OtherController () <UITableViewDataSource, UITableViewDelegate>
 
+
 @end
 
 
@@ -14,8 +15,6 @@ static NSString*  otherTableViewCellReuseIdentifier = @"otherTableViewCellReuseI
 @implementation OtherController
 {
     NSMutableDictionary* sectionZeroViewKeyFrames;
-    
-    NSMutableArray* sectionZeroContents;
 }
 
 
@@ -25,13 +24,16 @@ static NSString*  otherTableViewCellReuseIdentifier = @"otherTableViewCellReuseI
 @synthesize sectionZeroView;
 
 
+@synthesize sectionZeroContents;
+
+
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
-    
+//    __weak OtherController* weakInstance = self;
     // otherTableView
     otherTableView = [[UITableView alloc] init];
     otherTableView.delegate = self;
@@ -41,6 +43,7 @@ static NSString*  otherTableViewCellReuseIdentifier = @"otherTableViewCellReuseI
     otherTableView.separatorStyle = UITableViewCellSeparatorStyleNone;
     [otherTableView registerClass:[OtherTableViewCell class] forCellReuseIdentifier:otherTableViewCellReuseIdentifier];
     [ColorHelper setBorder: otherTableView color:[UIColor blackColor]];
+    [[self contentView] addSubview: otherTableView];
     
     // section view
     sectionZeroViewKeyFrames = [NSMutableDictionary dictionary];
@@ -80,7 +83,7 @@ static NSString*  otherTableViewCellReuseIdentifier = @"otherTableViewCellReuseI
             attributeKey = kColumn_Total_Price;
             
         } else if (i == count -1) {
-            rect.size.width = 1024 - rect.origin.x;
+            rect.size.width = otherTableView.frame.size.width - rect.origin.x;
             attributeKey = kColumn_Action;
         }
         
@@ -98,26 +101,9 @@ static NSString*  otherTableViewCellReuseIdentifier = @"otherTableViewCellReuseI
         textField = field;
     }
     
-    // add subview
-    [[self contentView] addSubview: otherTableView];
-    
-    
-    
-    
     // data source
-    sectionZeroContents = [NSMutableArray array];
-    
-    NSArray* datasources = [NSArray arrayWithObjects: @{
-                                                        kProject_Name: @"鋼架製作",
-                                                        kMaterial_Specifications : @"",
-                                                        kColumn_Caculate_Quantity: @"",
-                                                        kColumn_Unit_Price: @"",
-                                                        kColumn_Unit: @"kg",
-                                                        kColumn_Total_Price : @""
-                                                        },
-                            nil];
-    
-    [sectionZeroContents setArray: datasources];
+    NSArray* defaultDatasources = [JsonFileManager getJsonFromFile:@"otherTableViewDataSources.json"];
+    sectionZeroContents = [ArrayHelper deepCopy: defaultDatasources];
 }
 
 
@@ -127,11 +113,20 @@ static NSString*  otherTableViewCellReuseIdentifier = @"otherTableViewCellReuseI
 }
 
 
+
+
+
+
+
+
+
+
+
 #pragma mark - TableView Datasource
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return 20;
+    return sectionZeroContents.count;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -143,7 +138,7 @@ static NSString*  otherTableViewCellReuseIdentifier = @"otherTableViewCellReuseI
     }
     
     [cell setContents: [sectionZeroContents safeObjectAtIndex: indexPath.row]];
-    
+
     return cell;
 }
 
@@ -164,5 +159,33 @@ static NSString*  otherTableViewCellReuseIdentifier = @"otherTableViewCellReuseI
 {
     return sectionZeroView;
 }
+
+
+
+// ----------------------- Delete Begin -----------------------
+- (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    return YES;
+}
+
+- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    [tableView endEditing:YES];
+    if (editingStyle == UITableViewCellEditingStyleDelete) {
+        // Delete the row from the data source
+        [sectionZeroContents removeObjectAtIndex: indexPath.row];
+        [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation: UITableViewRowAnimationBottom];
+    } else if (editingStyle == UITableViewCellEditingStyleInsert) {
+        // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
+        
+    }
+    [tableView performSelector:@selector(reloadData) withObject:nil afterDelay:0.5];
+}
+
+- (NSString *)tableView:(UITableView *)tableView titleForDeleteConfirmationButtonForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    return @"刪除";
+}
+// ----------------------- Delete End -----------------------
 
 @end

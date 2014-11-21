@@ -82,6 +82,7 @@
 
 -(void) setValues:(NSDictionary *)values
 {
+    _identifcation = values[kColumn_Id];
     for (UIView* subView in self.contentView.subviews) {
         if ([subView conformsToProtocol:@protocol(ComponentProtocal) ]) {
             id<ComponentProtocal> component = (id<ComponentProtocal>)subView;
@@ -96,18 +97,21 @@
 
 -(NSMutableDictionary*) getValues
 {
-    NSMutableDictionary* result = [NSMutableDictionary dictionary];
+    NSMutableDictionary* contents = [NSMutableDictionary dictionary];
     for (UIView* subView in self.contentView.subviews) {
         if ([subView conformsToProtocol:@protocol(ComponentProtocal) ]) {
             id<ComponentProtocal> component = (id<ComponentProtocal>)subView;
             NSString* key = [component attributeKey];
             id value = [component connotation];
             if (value && key) {
-                [result setObject:value forKey:key];
+                [contents setObject:value forKey:key];
             }
         }
     }
-    return result;
+    if (_identifcation) {
+        [contents setObject:_identifcation forKey:kColumn_Id];
+    }
+    return contents;
 }
 
 
@@ -152,8 +156,20 @@
         return;
     }
     
+    // change the values
+    [OrderTableViewCell caculateCellTheTotalValue: values];
     
+    [cellsDataContents replaceObjectAtIndex: indexPath.row withObject:values];
     
+    [tableView updateCellValuesAtRow:indexPath.row cell:self];
+}
+
+
+
+#pragma mark - Class Methods
+
++(void) caculateCellTheTotalValue: (NSMutableDictionary*)values
+{
     // for kColumn_Unit_Price & kColumn_Caculate_Quantity,  update the caculate results
     if (!isEmptyString(values[kColumn_Caculate_Quantity]) && !isEmptyString(values[kColumn_Unit_Price])) {
         float quantityPrice = [values[kColumn_Caculate_Quantity] floatValue];
@@ -163,10 +179,6 @@
         NSString* totalString = [NSString stringWithFormat:@"%.0f", total];
         [values setObject: totalString forKey: kColumn_Total_Price];
     }
-    
-    [cellsDataContents replaceObjectAtIndex: indexPath.row withObject:values];
-    
-    [tableView updateCellValuesAtRow:indexPath.row cell:self];
 }
 
 

@@ -18,9 +18,6 @@
 @property (readonly, strong) UIView* sectionZeroView;
 
 
-@property (readonly, strong) NSMutableArray* moveSequencesRows;
-
-
 
 @property (assign) BOOL isExpandFormulaView;
 
@@ -34,8 +31,6 @@
 #pragma mark - Public Methods
 
 -(void) updateCellValuesAtRow: (NSUInteger)row cell:(OrderTableViewCell*)cell;
-
-
 
 -(void) iterateTableColumnHeaderViews: (BOOL(^)(int tag, UIView* columnHeaderView))handler;
 

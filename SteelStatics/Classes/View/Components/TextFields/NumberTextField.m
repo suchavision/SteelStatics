@@ -11,12 +11,14 @@
     
     
     self.textFieldShouldChangeBlock = ^BOOL(NormalTextField* textField, NSRange range, NSString* replaceString) {
-        if (range.location == 0) {
-            if ([replaceString isEqualToString:@"0" ]) {
-                return NO;
+        if (range.location == 1) {
+            if ([textField.text isEqualToString:@"0"] && [replaceString isEqualToString:@"0"]) {
+//                textField.text = nil;
+                return YES;
             }
         }
-        return [SSViewHelper checkIsNumericWithAlert: replaceString];
+        BOOL isNumber = [SSViewHelper checkIsNumericWithAlert: replaceString];
+        return isNumber;
     };
 }
 
