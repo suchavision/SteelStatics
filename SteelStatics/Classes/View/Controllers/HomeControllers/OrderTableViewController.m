@@ -27,7 +27,7 @@
     
     //
     NormalButton* expandButton = [[NormalButton alloc] init];
-    expandButton.frame = CanvasRect(100, 0, 150, 45);
+    expandButton.frame = CanvasRect(0, 0, 150, 45);
     [expandButton setTitle: @"顯示公式" forState:UIControlStateNormal];
     [expandButton setTitle: @"隱藏公式" forState:UIControlStateSelected];
     [expandButton setTitleColor: [UIColor blueColor] forState:UIControlStateNormal];
@@ -40,7 +40,7 @@
     
     //
     NormalButton* editButton = [[NormalButton alloc] init];
-    editButton.frame = CanvasRect(300, 0, 150, 45);
+    editButton.frame = CanvasRect(150, 0, 150, 45);
     [editButton setTitle: @"編輯排序" forState:UIControlStateNormal];
     [editButton setTitle: @"完成編輯" forState:UIControlStateSelected];
     [editButton setTitleColor: [UIColor blueColor] forState:UIControlStateNormal];
@@ -56,8 +56,9 @@
         
     };
     
+    //
     NormalButton* printButton = [[NormalButton alloc] init];
-    printButton.frame = CanvasRect(500, 0, 150, 45);
+    printButton.frame = CanvasRect(300, 0, 150, 45);
     [printButton setTitle: @"列印表單" forState:UIControlStateNormal];
     [printButton setTitleColor: [UIColor blueColor] forState:UIControlStateNormal];
     [printButton setTitleColor: [UIColor blackColor] forState:UIControlStateHighlighted];
@@ -67,6 +68,64 @@
         }];
     };
     
+    // 
+    NormalButton* saveButton = [[NormalButton alloc] init];
+    saveButton.frame = CanvasRect(450, 0, 150, 45);
+    [saveButton setTitle: @"保存表單" forState:UIControlStateNormal];
+    [saveButton setTitleColor: [UIColor blueColor] forState:UIControlStateNormal];
+    [saveButton setTitleColor: [UIColor blackColor] forState:UIControlStateHighlighted];
+    saveButton.didClikcButtonAction = ^void(UIButton* button) {
+        NSMutableArray* dataSources = weakInstance.tableView.cellsDataContents;
+        NSString* savedPath = [OrderTableViewController saveArchiversPathWithSubPath: SUB_PATH_QUOTE_ORDER];
+        NSString* fileName = [[DateHelper stringFromDate: [NSDate date] pattern:PATTERN_DATE_TIME] stringByAppendingString:@" Quote.data"];
+        NSString* path = [savedPath stringByAppendingPathComponent: fileName];
+        [FileManager createFolderWhileNotExist: path];
+        [NSKeyedArchiver archiveRootObject: dataSources toFile: path];
+        
+        [VIEW showHint: @"已經保存"];
+    };
+    
+    
+    // 
+    NormalButton* savedListButton = [[NormalButton alloc] init];
+    savedListButton.frame = CanvasRect(600, 0, 150, 45);
+    [savedListButton setTitle: @"表單列表" forState:UIControlStateNormal];
+    [savedListButton setTitleColor: [UIColor blueColor] forState:UIControlStateNormal];
+    [savedListButton setTitleColor: [UIColor blackColor] forState:UIControlStateHighlighted];
+    savedListButton.didClikcButtonAction = ^void(UIButton* button) {
+        NSString* savedPath = [OrderTableViewController saveArchiversPathWithSubPath: SUB_PATH_QUOTE_ORDER];
+        NSArray* files = [FileManager getFileNamesIn: savedPath];
+        if (!files) return;
+        NSMutableDictionary* tableViewContentsDictionary = [DictionaryHelper deepCopy: @{@"": files}];
+        
+        PopTableView* popTableView = [[PopTableView alloc] init];
+        popTableView.tableViewObj.tableView.contentsDictionary = tableViewContentsDictionary;
+        popTableView.tableViewObj.tableView.tableViewBaseDidSelectIndexPathAction = ^void(TableViewBase* tableViewBase, NSIndexPath* indexPath) {
+            
+            NSString* filename = [tableViewBase contentForIndexPath: indexPath];
+            NSString* filepath = [savedPath stringByAppendingPathComponent: filename];
+            
+            NSArray* tmp = [NSKeyedUnarchiver unarchiveObjectWithFile: filepath];
+            NSMutableArray* dataSources = [ArrayHelper deepCopy: tmp];
+            [weakInstance.tableView.cellsDataContents setArray: dataSources];
+            [weakInstance.tableView reloadData];
+            
+            [PopupViewHelper dissmissCurrentPopView];
+        };
+        [PopupViewHelper popView:popTableView willDissmiss:nil];
+        
+        // delete 
+        popTableView.tableViewObj.tableView.tableViewBaseCanEditIndexPathAction = ^BOOL(TableViewBase * tableView, NSIndexPath * indexPath){
+            return YES;
+        };
+        popTableView.tableViewObj.tableView.tableViewBaseShouldDeleteContentsAction = ^BOOL(TableViewBase* tableViewObj, NSIndexPath* indexPath) {
+            NSString* fileName = [tableViewObj contentForIndexPath:indexPath];
+            NSString* fullPath = [savedPath stringByAppendingPathComponent: fileName];
+            [FileManager deleteFile: fullPath];
+            return YES;
+        };
+    };
+    
     
     //
     UIView* toolsView = [[UIView alloc] initWithFrame:CanvasRect(0, 48, 768, 50)];
@@ -74,6 +133,8 @@
     [toolsView addSubview: expandButton];
     [toolsView addSubview: editButton];
     [toolsView addSubview: printButton];
+    [toolsView addSubview: saveButton];
+    [toolsView addSubview: savedListButton];
 }
 
 -(void)viewDidAppear:(BOOL)animated
@@ -149,5 +210,12 @@
         
     } completion:nil];
 }
+
+
++(NSString*) saveArchiversPathWithSubPath: (NSString*)subPath
+{
+    return [[FileManager documentsPath] stringByAppendingPathComponent:subPath];
+}
+
 
 @end

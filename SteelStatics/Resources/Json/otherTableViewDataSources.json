@@ -3,6 +3,37 @@
 [
  
  
+ 
+ {
+ 
+ "id": "empty",
+ 
+ "kProject_Name": "",
+ "kMaterial_Specifications" : "",
+ "kColumn_Caculate_Quantity": "",
+ "kColumn_Unit_Price": "",
+ "kColumn_Unit": "",
+ "kColumn_Total_Price" : ""
+ 
+ },
+ 
+ 
+ 
+ {
+ 
+ "id": "SteelLinker",
+ 
+ "kProject_Name": "鋼接板",
+ "kMaterial_Specifications" : "",
+ "kColumn_Caculate_Quantity": "",
+ "kColumn_Unit_Price": "",
+ "kColumn_Unit": "kg",
+ "kColumn_Total_Price" : ""
+ 
+ },
+ 
+ 
+ 
  {
  
  "id": "SteelFrameCreate",

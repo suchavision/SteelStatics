@@ -38,7 +38,7 @@
     for (int i = 0; i < buttonCount; i++) {
         NSString* title = nil;
         if (i == 0) {
-            title = @"表面未處理鋼材計算";
+            title = @"鋼材計算";
         }
 //        if (i == 1) {
 //            title = @"表面已處理鋼材計算";

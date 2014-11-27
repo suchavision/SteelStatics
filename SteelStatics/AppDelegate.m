@@ -2,9 +2,6 @@
 #import "AppInterface.h"
 
 
-#import "IQKeyboardManager.h"
-
-
 
 @implementation AppDelegate
 
@@ -12,10 +9,8 @@
 {
     [[UIApplication sharedApplication] setStatusBarHidden:YES withAnimation:UIStatusBarAnimationFade];
     [FrameTranslater setCanvasSize: CGSizeMake(768, 1024)];
-
-    [IQKeyboardManager enableKeyboardManagerWithDistance: CanvasH(0)];
     
-//    [[KeyBoardHelper sharedInstance] setKeyboardDistanceFromTextField: CanvasH(0)];
+    [[KeyBoardHelper sharedInstance] setKeyboardDistanceFromTextField: CanvasH(0)];
     
     // initialize the window
     UIStoryboard* storyboard = [UIStoryboard storyboardWithName:@"Main_iPad" bundle:nil];

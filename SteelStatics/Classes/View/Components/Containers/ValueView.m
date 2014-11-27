@@ -27,9 +27,15 @@
         return NO;
     }];
     
-    ValueCaculateView* caView = (ValueCaculateView*)[ViewHelper getSubview:self clazz:[ValueCaculateView class]];
-    UIImage* croppedImage = [ViewHelper imageFromView: caView];
-    [datas setObject:croppedImage forKey: kColumn_Formula_Image];
+    ValueCaculateView* caculateView = (ValueCaculateView*)[ViewHelper getSubview:self clazz:[ValueCaculateView class]];
+    CaculateResultTextField* resultView = (CaculateResultTextField*)[ViewHelper getSubview:self clazz:[CaculateResultTextField class]];
+    
+    UIImage* caculateViewImage = [ViewHelper imageFromView: caculateView];
+    UIImage* resultViewImage = [ViewHelper imageFromView: resultView];
+    
+    UIImage* mergeImage = [ImageHelper merge: caculateViewImage with:resultViewImage];
+    
+    [datas setObject:mergeImage forKey: kColumn_Formula_Image];
     
     NSLog(@"--- %@" , datas);
     

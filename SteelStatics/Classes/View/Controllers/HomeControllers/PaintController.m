@@ -68,12 +68,14 @@
 
 #pragma mark - Override Methods
 
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
     
     AppScrollView* scrollView = (AppScrollView*)self.view;
-    UIView* contentView = [scrollView.subviews firstObject];
+    UIView* contentView = [self contentView];
+    [contentView addOriginY: CanvasY(50)];
     scrollView.contentSize = CGSizeMake(scrollView.bounds.size.width, contentView.bounds.size.height);
     // Do any additional setup after loading the view.
     
@@ -93,7 +95,7 @@
         return NO;
     }];
     
-    // add order Button
+    // ------------------------ Add order Button
     [ViewHelper iterateSubView: contentView class:[AddOrderButton class] handler:^BOOL(AddOrderButton *orderButton) {
         orderButton.didClickButtonAction = ^void(BaseButton* button) {
             
@@ -109,16 +111,18 @@
         return NO;
     }];
     
-    // table View
+    
+    
+    
+    // ------------------------ Table View
     [ColorHelper setBorder: paintTableView color:[UIColor blackColor]];
-    paintTableView.tableViewBaseNumberOfSectionsAction = ^NSInteger(TableViewBase* tableViewObj){
+    paintTableView.tableViewBaseNumberOfSectionsAction = ^NSInteger(TableViewBase* tableViewObj) {
         return 1;
     };
     paintTableView.tableViewBaseNumberOfRowsInSectionAction = ^NSInteger(TableViewBase* tableViewObj, NSInteger section) {
         return weakInstance.tableDataSource.count;
     };
-    paintTableView.tableViewBaseHeightForIndexPathAction = ^CGFloat(TableViewBase* tableViewObj, NSIndexPath* indexPath)
-    {
+    paintTableView.tableViewBaseHeightForIndexPathAction = ^CGFloat(TableViewBase* tableViewObj, NSIndexPath* indexPath) {
         UIImage* image = [weakInstance.tableDataSource objectAtIndex:indexPath.row];
         return image.size.height + CanvasH(20);
     };
@@ -137,6 +141,75 @@
     };
 
 
+    
+    
+    // ------------------------ Save Buttons
+    
+    // 
+    NormalButton* saveButton = [[NormalButton alloc] init];
+    saveButton.frame = CanvasRect(450, 0, 150, 45);
+    [saveButton setTitle: @"保存表單" forState:UIControlStateNormal];
+    [saveButton setTitleColor: [UIColor blueColor] forState:UIControlStateNormal];
+    [saveButton setTitleColor: [UIColor blackColor] forState:UIControlStateHighlighted];
+    saveButton.didClikcButtonAction = ^void(UIButton* button) {
+        NSMutableArray* dataSources = weakInstance.tableDataSource;
+        NSString* savedPath = [OrderTableViewController saveArchiversPathWithSubPath: SUB_PATH_PAINT_ORDER];
+        NSString* fileName = [[DateHelper stringFromDate: [NSDate date] pattern:PATTERN_DATE_TIME] stringByAppendingString:@" Paint.data"];
+        NSString* path = [savedPath stringByAppendingPathComponent: fileName];
+        [FileManager createFolderWhileNotExist: path];
+        [NSKeyedArchiver archiveRootObject: dataSources toFile: path];
+        
+        [VIEW showHint: @"已經保存"];
+    };
+    
+    
+    // 
+    NormalButton* savedListButton = [[NormalButton alloc] init];
+    savedListButton.frame = CanvasRect(600, 0, 150, 45);
+    [savedListButton setTitle: @"表單列表" forState:UIControlStateNormal];
+    [savedListButton setTitleColor: [UIColor blueColor] forState:UIControlStateNormal];
+    [savedListButton setTitleColor: [UIColor blackColor] forState:UIControlStateHighlighted];
+    savedListButton.didClikcButtonAction = ^void(UIButton* button) {
+        NSString* savedPath = [OrderTableViewController saveArchiversPathWithSubPath: SUB_PATH_PAINT_ORDER];
+        NSArray* files = [FileManager getFileNamesIn: savedPath];
+        if (!files) return;
+        NSMutableDictionary* tableViewContentsDictionary = [DictionaryHelper deepCopy: @{@"": files}];
+        
+        PopTableView* popTableView = [[PopTableView alloc] init];
+        popTableView.tableViewObj.tableView.contentsDictionary = tableViewContentsDictionary;
+        popTableView.tableViewObj.tableView.tableViewBaseDidSelectIndexPathAction = ^void(TableViewBase* tableViewBase, NSIndexPath* indexPath) {
+            
+            NSString* filename = [tableViewBase contentForIndexPath: indexPath];
+            NSString* filepath = [savedPath stringByAppendingPathComponent: filename];
+            
+            NSArray* tmp = [NSKeyedUnarchiver unarchiveObjectWithFile: filepath];
+            NSMutableArray* dataSources = [ArrayHelper deepCopy: tmp];
+            [weakInstance.tableDataSource setArray: dataSources];
+            [weakInstance.paintTableView reloadData];
+            
+            [PopupViewHelper dissmissCurrentPopView];
+        };
+        [PopupViewHelper popView:popTableView willDissmiss:nil];
+        
+        // delete 
+        popTableView.tableViewObj.tableView.tableViewBaseCanEditIndexPathAction = ^BOOL(TableViewBase * tableView, NSIndexPath * indexPath){
+            return YES;
+        };
+        popTableView.tableViewObj.tableView.tableViewBaseShouldDeleteContentsAction = ^BOOL(TableViewBase* tableViewObj, NSIndexPath* indexPath) {
+            NSString* fileName = [tableViewObj contentForIndexPath:indexPath];
+            NSString* fullPath = [savedPath stringByAppendingPathComponent: fileName];
+            [FileManager deleteFile: fullPath];
+            return YES;
+        };
+    };
+    
+    
+    //
+    UIView* toolsView = [[UIView alloc] initWithFrame:CanvasRect(0, 48, 768, 50)];
+    [self.view addSubview: toolsView];
+    [toolsView addSubview: saveButton];
+    [toolsView addSubview: savedListButton];
+    
 }
 
 -(void) autoUpdateResuls:(UITextField *)textField

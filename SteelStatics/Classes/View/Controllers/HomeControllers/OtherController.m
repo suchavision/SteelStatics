@@ -49,7 +49,7 @@ static NSString*  otherTableViewCellReuseIdentifier = @"otherTableViewCellReuseI
     sectionZeroViewKeyFrames = [NSMutableDictionary dictionary];
     sectionZeroView = [[UIView alloc] init];
     UITextField* textField = nil;
-    int count = 7;
+    int count = 5;
     for (int i = 0; i < count; i++) {
         NSString* title = nil;
         NSString* attributeKey = nil;
@@ -58,12 +58,12 @@ static NSString*  otherTableViewCellReuseIdentifier = @"otherTableViewCellReuseI
         
         if (i == 0) {
             title = @"項目名稱";
-            rect.size.width += CanvasW(20);
+            rect.size.width += CanvasW(50);
             attributeKey = kProject_Name;
             
         } else if (i == 1) {
             title = @"材料規格";
-            rect.size.width += CanvasW(20);
+            rect.size.width += CanvasW(200);
             attributeKey = kMaterial_Specifications;
             
         } else if (i == 2) {
@@ -72,8 +72,10 @@ static NSString*  otherTableViewCellReuseIdentifier = @"otherTableViewCellReuseI
             
         } else if (i == 3) {
             title = @"数量";
+            rect.size.width += CanvasW(0);
             attributeKey = kColumn_Caculate_Quantity;
             
+            /*
         } else if (i == 4) {
             title = @"單價";
             attributeKey = kColumn_Unit_Price;
@@ -81,7 +83,7 @@ static NSString*  otherTableViewCellReuseIdentifier = @"otherTableViewCellReuseI
         } else if (i == 5) {
             title = @"總價";
             attributeKey = kColumn_Total_Price;
-            
+            */
         } else if (i == count -1) {
             rect.size.width = otherTableView.frame.size.width - rect.origin.x;
             attributeKey = kColumn_Action;

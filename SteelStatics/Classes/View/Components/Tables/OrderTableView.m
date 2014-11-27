@@ -72,26 +72,53 @@
 {
     UIView* footerview = [[UIView alloc] initWithFrame:CanvasRect(0, 0, 0, 180)];
 
-    [ViewsFactoryHelper createTextField:@"聯繫人" frame:CanvasRect(404, 0, 90, 30) enabled:NO fontSize:CanvasFontSize(15) borderWidth:0.5 textAlignment:NSTextAlignmentCenter superView:footerview];
-    [ViewsFactoryHelper createTextField:@"" frame:CanvasRect(494, 0, 270, 30) enabled:YES fontSize:CanvasFontSize(15) borderWidth:0.5 textAlignment:NSTextAlignmentCenter superView:footerview];
-    [ViewsFactoryHelper createTextField:@"手機" frame:CanvasRect(404, 30, 90, 30) enabled:NO fontSize:CanvasFontSize(15) borderWidth:0.5 textAlignment:NSTextAlignmentCenter superView:footerview];
-    [ViewsFactoryHelper createTextField:@"" frame:CanvasRect(494, 30, 270, 30) enabled:YES fontSize:CanvasFontSize(15) borderWidth:0.5 textAlignment:NSTextAlignmentCenter superView:footerview];
-    [ViewsFactoryHelper createTextField:@"電話" frame:CanvasRect(404, 60, 90, 30) enabled:NO fontSize:CanvasFontSize(15) borderWidth:0.5 textAlignment:NSTextAlignmentCenter superView:footerview];
-    [ViewsFactoryHelper createTextField:@"0758-36348858" frame:CanvasRect(494, 60, 270, 30) enabled:YES fontSize:CanvasFontSize(15) borderWidth:0.5 textAlignment:NSTextAlignmentCenter superView:footerview];
-    [ViewsFactoryHelper createTextField:@"傳真" frame:CanvasRect(404, 90, 90, 30) enabled:NO fontSize:CanvasFontSize(15) borderWidth:0.5 textAlignment:NSTextAlignmentCenter superView:footerview];
-    [ViewsFactoryHelper createTextField:@"0758-36348758" frame:CanvasRect(494, 90, 270, 30) enabled:YES fontSize:CanvasFontSize(15) borderWidth:0.5 textAlignment:NSTextAlignmentCenter superView:footerview];
-    [ViewsFactoryHelper createTextField:@"地址" frame:CanvasRect(404, 120, 90, 30) enabled:NO fontSize:CanvasFontSize(15) borderWidth:0.5 textAlignment:NSTextAlignmentCenter superView:footerview];
-    [ViewsFactoryHelper createTextField:@"肇慶市大旺高新區" frame:CanvasRect(494, 120, 270, 30) enabled:YES fontSize:CanvasFontSize(15) borderWidth:0.5 textAlignment:NSTextAlignmentCenter superView:footerview];
-    [ViewsFactoryHelper createTextField:@"報價日期" frame:CanvasRect(404, 150, 90, 30) enabled:NO fontSize:CanvasFontSize(15) borderWidth:0.5 textAlignment:NSTextAlignmentCenter superView:footerview];
     
-    NSString* dateString = [DateHelper stringFromDate: [NSDate date] pattern:@"YYYY年MM月dd日"];
-    [ViewsFactoryHelper createTextField:dateString frame:CanvasRect(494, 150, 270, 30) enabled:YES fontSize:CanvasFontSize(15) borderWidth:0.5 textAlignment:NSTextAlignmentCenter superView:footerview];
-    
-    UITextView *textView = [[UITextView alloc] initWithFrame:CanvasRect(3 , 0, 401, 180)];
+    UITextView *textView = [[UITextView alloc] initWithFrame:CanvasRect(3 , 0, 479, 180)];
     textView.text = @"說明:\n\n1.本報價未含報建費、總包公司配合費、材料檢測費、防火塗料費、吊車樑及安裝費\n\n2.因材料波動較大，本報價有效期為三天\n\n3.落水管為±0.00以上";
     textView.font = [UIFont systemFontOfSize:CanvasFontSize(15)];
     [textView.layer setBorderWidth:0.5];
     [footerview addSubview: textView];
+    
+    CGFloat sizeHeight = 30;
+    CGFloat sizeWidth = 80;
+    CGRect rect1 = CanvasRect(0, 0, sizeWidth, sizeHeight);
+    rect1.origin.x = [textView sizeWidth] + 1;
+    
+    
+    CGRect rect2 = CanvasRect(0, 0, 0, sizeHeight);
+    rect2.origin.x = rect1.size.width + [textView sizeWidth];
+    rect2.size.width = self.frame.size.width - rect2.origin.x;
+    
+    
+    [ViewsFactoryHelper createTextField:@"聯繫人" frame:rect1 enabled:NO fontSize:CanvasFontSize(15) borderWidth:0.5 textAlignment:NSTextAlignmentCenter superView:footerview];
+    [ViewsFactoryHelper createTextField:@"" frame:rect2 enabled:YES fontSize:CanvasFontSize(15) borderWidth:0.5 textAlignment:NSTextAlignmentCenter superView:footerview];
+    
+    rect1.origin.y += CanvasH(sizeHeight);
+    rect2.origin.y += CanvasH(sizeHeight);
+    [ViewsFactoryHelper createTextField:@"手機" frame:rect1 enabled:NO fontSize:CanvasFontSize(15) borderWidth:0.5 textAlignment:NSTextAlignmentCenter superView:footerview];
+    [ViewsFactoryHelper createTextField:@"" frame:rect2 enabled:YES fontSize:CanvasFontSize(15) borderWidth:0.5 textAlignment:NSTextAlignmentCenter superView:footerview];
+    
+    rect1.origin.y += CanvasH(sizeHeight);
+    rect2.origin.y += CanvasH(sizeHeight);
+    [ViewsFactoryHelper createTextField:@"電話" frame:rect1 enabled:NO fontSize:CanvasFontSize(15) borderWidth:0.5 textAlignment:NSTextAlignmentCenter superView:footerview];
+    [ViewsFactoryHelper createTextField:@"0758-36348858" frame:rect2 enabled:YES fontSize:CanvasFontSize(15) borderWidth:0.5 textAlignment:NSTextAlignmentCenter superView:footerview];
+    
+    rect1.origin.y += CanvasH(sizeHeight);
+    rect2.origin.y += CanvasH(sizeHeight);
+    [ViewsFactoryHelper createTextField:@"傳真" frame:rect1 enabled:NO fontSize:CanvasFontSize(15) borderWidth:0.5 textAlignment:NSTextAlignmentCenter superView:footerview];
+    [ViewsFactoryHelper createTextField:@"0758-36348758" frame:rect2 enabled:YES fontSize:CanvasFontSize(15) borderWidth:0.5 textAlignment:NSTextAlignmentCenter superView:footerview];
+    
+    rect1.origin.y += CanvasH(sizeHeight);
+    rect2.origin.y += CanvasH(sizeHeight);
+    [ViewsFactoryHelper createTextField:@"地址" frame:rect1 enabled:NO fontSize:CanvasFontSize(15) borderWidth:0.5 textAlignment:NSTextAlignmentCenter superView:footerview];
+    [ViewsFactoryHelper createTextField:@"肇慶市大旺高新區" frame:rect2 enabled:YES fontSize:CanvasFontSize(15) borderWidth:0.5 textAlignment:NSTextAlignmentCenter superView:footerview];
+    
+    rect1.origin.y += CanvasH(sizeHeight);
+    rect2.origin.y += CanvasH(sizeHeight);
+    [ViewsFactoryHelper createTextField:@"報價日期" frame:rect1 enabled:NO fontSize:CanvasFontSize(15) borderWidth:0.5 textAlignment:NSTextAlignmentCenter superView:footerview];
+    NSString* dateString = [DateHelper stringFromDate: [NSDate date] pattern:@"YYYY年MM月dd日"];
+    [ViewsFactoryHelper createTextField:dateString frame:rect2 enabled:YES fontSize:CanvasFontSize(15) borderWidth:0.5 textAlignment:NSTextAlignmentCenter superView:footerview];
+    
     
     return footerview;
 }
@@ -101,36 +128,41 @@
 {
     if (! sectionZeroView) {
         UIView* sectionView = [[UIView alloc] init];
-        for (int i = 0; i < Table_Column_Count; i++) {
+        
+        UITextField* textField = nil;
+        int count = Table_Column_Count;
+        for (int i = 0; i < count; i++) {
             NSString* title = nil;
-            CGRect rect = CGRectZero;
+            CGRect rect = CanvasRect(0, 0, 0, 30);
+            rect.origin.x = [textField originX] + [textField sizeWidth];
+            
             if (i == 0) {
                 title = @"序號";
-                rect = CanvasRect(3, 0, 51, 30);
+                rect.size.width = CanvasW(50);
             } else if (i == 1) {
                 title = @"項目名稱";
-                rect = CanvasRect(54, 0, 175, 30);
+                rect.size.width = CanvasW(150);
             } else if (i == 2) {
                 title = @"材料規格";
-                rect = CanvasRect(229, 0, 175, 30);
+                rect.size.width = CanvasW(220);
             } else if (i == 3) {
                 title = @"計算公式";
-                rect = CanvasRect(404, 0, 0, 30);
+                rect.size.width = CanvasW(0);
             } else if (i == 4) {
                 title = @"單位";
-                rect = CanvasRect(404, 0, 60, 30);
+                rect.size.width = CanvasW(60);
             } else if (i == 5) {
                 title = @"數量";
-                rect = CanvasRect(464, 0, 90, 30);
+                rect.size.width = CanvasW(80);
             } else if (i == 6) {
                 title = @"單價";
-                rect = CanvasRect(554, 0, 90, 30);
-            } else if (i == 7) {
+                rect.size.width = CanvasW(80);
+            } else if (i == count -1) {
                 title = @"總價";
-                rect = CanvasRect(644, 0, 120, 30);
+                rect.size.width = self.frame.size.width - rect.origin.x - 2;
             }
             
-            UITextField* textField = [ViewsFactoryHelper createTextField:title frame:rect enabled:NO  fontSize:CanvasFontSize(18) borderWidth:0.5 textAlignment:NSTextAlignmentCenter superView:sectionView];
+            textField = [ViewsFactoryHelper createTextField:title frame:rect enabled:NO  fontSize:CanvasFontSize(18) borderWidth:0.5 textAlignment:NSTextAlignmentCenter superView:sectionView];
             textField.tag = Table_Column_Tag(i);
         }
         sectionZeroView = sectionView;
@@ -185,7 +217,7 @@
     NSString* identifcation = contents[kColumn_Id];
     
     // the special caculate the total .......
-    if ([identifcation isEqualToString: kRow_SteelFrameCreate] || [identifcation isEqualToString:kRow_Total]) {
+    if ([identifcation isEqualToString: kRowID_SteelFrameCreate] || [identifcation isEqualToString:kRowID_Total]) {
         float total = 0;
         for (int i = 0; i < row; i++) {
             NSDictionary* values = [cellsDataContents objectAtIndex:i];

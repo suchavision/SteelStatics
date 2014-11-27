@@ -123,6 +123,13 @@
             ValueView* valueView = (ValueView*)[ViewHelper getSuperView: button clazz:[ValueView class]];
             NSMutableDictionary* values = [valueView getDatas];
             
+            if (values[kColumn_Caculate_Quantity]) {
+                float quantity = [values[kColumn_Caculate_Quantity] floatValue];
+                int result = floorf(quantity);
+                NSString* string = [NSString stringWithFormat:@"%d", result];
+                [values setObject: string forKey:kColumn_Caculate_Quantity];
+            }
+            
             OrderTableViewController* tableViewController = VIEW.tableController;
             [tableViewController.tableView.cellsDataContents addObject: values];
             

@@ -3,18 +3,15 @@
 
 
 
-#define kProject_Name               @"kProject_Name"
+#define kProject_Name                   @"kProject_Name"
 
-#define kMaterial_Specifications    @"kMaterial_Specifications"
+#define kMaterial_Specifications        @"kMaterial_Specifications"
 
-
-#define kColumn_Id                  @"id"
-
+#define kColumn_Id                      @"id"
 
 #define kColumn_Number                  @"kColumn_Number"
 
 #define kColumn_Formula_Image           @"kColumn_Formula_Image"
-
 
 #define kColumn_Caculate_Quantity       @"kColumn_Caculate_Quantity"
 
@@ -24,9 +21,7 @@
 
 #define kColumn_Total_Price             @"kColumn_Total_Price"
 
-
-#define kColumn_Action             @"kColumn_Action"
-
+#define kColumn_Action                  @"kColumn_Action"
 
 
 
@@ -38,8 +33,18 @@
 
 
 
-#define kRow_SteelFrameCreate       @"SteelFrameCreate"
 
-#define kRow_Total                  @"Total"
+#define kRowID_SteelFrameCreate         @"SteelFrameCreate"
+
+#define kRowID_Total                    @"Total"
+
+#define kRowID_SteelLinker              @"SteelLinker"
+
+
+
+
+
+
+
 
 
